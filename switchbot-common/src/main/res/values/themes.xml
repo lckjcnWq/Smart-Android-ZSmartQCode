@@ -1,7 +1,66 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.SwitchBot" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="android:windowBackground">@color/page_bg_gray</item>
+    <style name="Theme.SwitchBot.Base" parent="QMUI.Compat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/c1</item>
+        <item name="colorPrimaryVariant">@color/c1</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorAccent">@color/c1</item>
+
+        <item name="android:textColor">@color/cc4</item>
+
+        <!--水波纹效果-->
+        <item name="colorControlHighlight">@color/background</item>
+
+
+        <!--        <item name="android:forceDarkAllowed" tools:targetApi="q">true</item>-->
+
+        <item name="qmui_skin_support_topbar_title_color">@color/cc4</item>
+        <item name="qmui_skin_support_tab_normal_color">@color/cc4</item>
+        <item name="qmui_skin_support_tab_selected_color">@color/c1</item>
+
+
+        <item name="qmui_config_color_blue">@color/cc3</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textAllCaps">false</item>
+        <item name="qmui_skin_support_topbar_separator_color">@color/transparent</item>
+
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+
+        <!--**********************************************
+        *                 qmui bottom sheet              *
+        ***********************************************-->
+        <item name="qmui_skin_support_bottom_sheet_bg">@color/white</item>
+        <item name="qmui_skin_support_bottom_sheet_title_text_color">@color/cc4</item>
+        <item name="qmui_skin_support_bottom_sheet_cancel_text_color">@color/cc4</item>
+        <!--        <item name="qmui_skin_support_bottom_sheet_cancel_bg">@color/divider_color</item>-->
+        <item name="qmui_skin_support_bottom_sheet_separator_color">@color/divide_line</item>
+        <item name="qmui_skin_support_bottom_sheet_list_item_bg">@color/white</item>
+        <item name="qmui_skin_support_bottom_sheet_list_item_text_color">@color/cc4</item>
+        <!--        <item name="qmui_skin_support_bottom_sheet_list_red_point_color">?attr/qmui_config_color_red</item>-->
+        <!--        <item name="qmui_skin_support_bottom_sheet_list_mark">?attr/qmui_skin_support_icon_mark</item>-->
+        <item name="qmui_skin_support_bottom_sheet_grid_item_text_color">@color/cc4</item>
+        <item name="imageButtonStyle">@style/qmui_alpha_image_style</item>
+        <item name="cardViewStyle">@style/card_view_style</item>
+
+        <item name="md_background_color">@color/white</item>
+    </style>
+
+    <style name="qmui_alpha_image_style" parent="ImageButton.Compat">
+        <item name="background">@color/transparent</item>
+    </style>
+
+    <style name="card_view_style" parent="CardView">
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
     </style>
 
     <style name="Theme.SwitchBot.NoActionBar">

@@ -5,6 +5,188 @@
   <color name="purple_700">#FF3700B3</color>
   <color name="teal_200">#FF03DAC5</color>
   <color name="teal_700">#FF018786</color>
-  <color name="black">#FF000000</color>
+  <!--  正文颜色  -->
+  <color name="content_text_color">@color/cc4</color>
+  <color name="content_text_color5">#1A333844</color>
+  <color name="content_text_color10">#1A333844</color>
+  <color name="content_text_color30">#4D333844</color>
+  <color name="desc_text_color">@color/c5</color>
+  <color name="hint_text_color">@color/stroke_dadddf</color>
+  <color name="bottom_dialog_title_color">@color/c5</color>
+  <color name="link_text_color10">#1A477EEF</color>
+  <color name="link_text_color30">#4D477EEF</color>
+  <color name="divider_color">@color/sw_foreground</color>
+  <color name="shadow_start">#0F000000</color>
+  <color name="alarm_bg_color">#FBEBEB</color>
   <color name="white">#FFFFFFFF</color>
+  <color name="transparent">#00FFFFFF</color>
+  <color name="transparent2">#4d000000</color>
+  <color name="c1">#E0393A</color>
+  <color name="c3">#00D668</color>
+  <color name="c4">#0088cc</color>
+  //灰色文本色值
+  <color name="c5">#9CA1A4</color>
+  //这两个色值由于引用地方较多 只是改了色值
+  <color name="cc1">@color/c5</color>
+  <color name="text_grey">@color/c5</color>
+  <color name="grey_9CA1A4">@color/c5</color>
+
+  <color name="specific_state_color">#E8E8E8</color>
+  <color name="ota_update_firmware_text_color1_dark">@color/cc4</color>
+
+  <!--白天模式和暗黑模式共用的颜色-->
+  <color name="black_without_night">#000000</color>
+  <color name="c5_without_night">#9CA1A4</color>
+  <color name="cc4_without_night">#333844</color>
+
+  <color name="lock_circle_bg">#111925</color>
+
+  <color name="sw_foreground">#1A000000</color>
+
+  <color name="c6">#E08839</color>
+
+  <color name="cc2">#6C717C</color>
+
+  <color name="cc3">#6C717C</color>
+
+  <color name="curtain_img_bg">#00ECECEC</color>
+
+  <color name="cc4_4d">#4D333844</color>
+  <color name="cc4">#333844</color>
+  //看看暗黑模式下效果，可能需要干掉这个色
+  <color name="cc4_10">#1A333844</color>
+
+  <color name="empty_tip">#A3ABB0</color>
+
+  <color name="bg_mask">#32000000</color>
+  <color name="default_blue_light">#477eef</color>
+  <color name="blue">#477eef</color>
+  <color name="color_E6EBF7">#E6EBF7</color>
+  <color name="background">#F7F7F8</color>
+  <color name="fa">@color/background</color>
+  //同步中的状态需要看看在暗黑模式有没有问题
+  <color name="log_syncing_bg">#FFE0E8F4</color>
+  <color name="log_sync_success_bg">#FFD2F0E0</color>
+
+  <color name="colorAccent">#E0393A</color>
+  <color name="colorAccent30">#4DE0393A</color>
+  <color name="holo_blue_bright">#ff00ddff</color>
+  <color name="holo_orange_dark">#ffff8800</color>
+  <color name="holo_red_dark">#ffcc0000</color>
+  <color name="holo_purple">#ffaa66cc</color>
+  <color name="orange">#fffaaa00</color>
+  <color name="action_sheet_blue">#477eef</color>
+  //灯带透明白色，暗黑模式不管
+  <color name="light_strip_menu">#1affffff</color>
+  <color name="bt_grey_circle">#4dffffff</color>
+
+  <color name="lock_progress_bg_color">#FF5B5F69</color>
+  <color name="a_white">#FFFBEBEB</color>
+  <color name="pad_start_color">#00F26B6C</color>
+  <color name="pad_bg_color">#FFF9F8F8</color>
+  <color name="a_black_color">@color/divider_color</color>
+  <color name="little_red_30">#4DFBEBEB</color>
+  <color name="white_5">#0DFFFFFF</color>
+  <color name="fe">#fffefefe</color>
+  <color name="mall_banner_start_color">#ffaa7440</color>
+  <color name="mall_banner_end_color">#00fafafa</color>
+  <color name="colorSecondary">#e0393a</color>
+  <color name="colorPrimary">#FFFFFF</color>//bar颜色#eb3243,#f4f4f4
+  <color name="colorPrimaryDark">#FFFFFF</color>
+  <color name="green">#06d6a0</color>
+  <color name="stroke_dadddf">#DADDDF</color>
+
+  <color name="colorTransparent">#00000000</color>
+  <color name="color_result_view">@color/cc4</color>
+  <color name="grey_type3">@color/cc3</color>
+  <color name="alert_background_color">#FFFFFAFA</color>
+  <color name="bulb_control_status_bar_color">#FF020C25</color>
+  <color name="bulb_preset_red_color">#FFFF0000</color>
+  <color name="bulb_preset_green_color">#FF00FF00</color>
+  <color name="bulb_preset_blue_color">#FF0000FF</color>
+
+  <color name="link_text_color">#477EEF</color>
+  <color name="shadow">#12010101</color>
+
+  <color name="ceiling_remote_bg">#bb333844</color>
+  <color name="black_333844">@color/cc4</color>
+  <color name="common_text_color">@color/cc4</color>
+
+  <color name="black">#000000</color>
+
+  <array name="bulb_select_colors">
+    <item>#FF0000</item>
+    <item>#FF7D00</item>
+    <item>#FFFF00</item>
+    <item>#00FF00</item>
+    <item>#00FFFF</item>
+    <item>#0000FF</item>
+    <item>#FF00FF</item>
+  </array>
+  <array name="bulb_select_alph">
+    <item>#ffffffff</item>
+    <item>#33FFFFFF</item>
+  </array>
+
+  <array name="bulb_select_white_colors">
+    <item>#FFF084</item>
+    <item>#FFFFFF</item>
+    <item>#CFEDFF</item>
+  </array>
+
+  <array name="strip_select_white_colors">
+    <item>#FF0000</item>
+    <item>#FF6600</item>
+    <item>#FFBB00</item>
+    <item>#83FF00</item>
+    <item>#0091FF</item>
+    <item>#3800FF</item>
+    <item>#C700FF</item>
+    <item>#FF81AA</item>
+    <item>#FF81AA</item>
+    <item>#FF9797</item>
+    <item>#FFD9A6</item>
+    <item>#FFF5A5</item>
+    <item>#A8FFA7</item>
+    <item>#9F9BFF</item>
+    <item>#F3ABFF</item>
+    <item>#FFABC9</item>
+  </array>
+
+  <color name="ceiling_night_color">#F1DDBF</color>
+
+  <!--  ceiling light  -->
+  <color name="ceiling_mode_c1">#88FFEB97</color>
+  <color name="ceiling_mode_c2">#22FFEB97</color>
+  <color name="ceiling_mode_c3">#88B5E3FF</color>
+  <color name="ceiling_mode_c4">#22B5E3FF</color>
+  <color name="ceiling_mode_c5">#88FFF7E1</color>
+  <color name="ceiling_mode_c6">#22FFF7E1</color>
+  <color name="ceiling_mode_c7">#88F5C859</color>
+  <color name="ceiling_mode_c8">#22F5C859</color>
+  <color name="ceiling_mode_c9">#88E2982E</color>
+  <color name="ceiling_mode_c10">#22E2982E</color>
+  <color name="ceiling_mode_c11">#88AFC8DA</color>
+  <color name="ceiling_mode_c12">#22ABC6D9</color>
+
+  <color name="grey_type_20f">#33DADDDF</color>
+  <color name="bulb_bar_text_color">#4D000000</color>
+  <color name="red_1a">#1AE0393A</color>
+  <color name="button_gray">#bababa</color>
+
+  <color name="cc2_aaa">#aa6C717C</color>
+  <color name="yellow_fff2e5">#fff2e5</color>
+  <color name="yellow_ff7d00">#ff7d00</color>
+  <color name="red_fcebeb">#FCEBEB</color>
+  <color name="main_red">@color/c1</color>
+  <!--sign in-->
+  <color name="sign_in_hint_color">@color/cc1</color>
+  <color name="sign_bg_color">#66000000</color>
+  <color name="sign_alert_text_color">@color/colorAccent</color>
+  <color name="sign_policy_text_color">@color/colorAccent</color>
+
+  <color name="keypad_tab_background">#0d000000</color>
+
+  <color name="fe_a30">#4Dfefefe</color>
+  <color name="dd_color">#dddddd</color>
 </resources>
