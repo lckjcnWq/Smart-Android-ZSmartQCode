@@ -72,8 +72,4 @@ public class ColorPickItemView extends FrameLayout {
         isColor = false;
         currentColor = COLORFUL_INT_NUM;
     }
-
-    public void setColorful(){
-        setBackgroundSrc(getResources().getDrawable(R.mipmap.palette));
-    }
 }

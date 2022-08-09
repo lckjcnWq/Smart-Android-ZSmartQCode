@@ -101,25 +101,10 @@ fun Dialog.setupSystemBar(
  * 在window退出时重置dialog的系统栏样式
  */
 fun Dialog.resetSystemBar(activity: Activity) {
-    ImmersionBar.destroy(activity, this)
+//    ImmersionBar.destroy(activity, this)
 }
 
 
-/**
- * 获取状态栏高度
- */
-fun Activity.getStatusBarHeight(): Int {
-    // 正确获取高度需要在页面布局完成后
-    val windowInsetsCompat = ViewCompat.getRootWindowInsets(window.decorView)
-    val insets = windowInsetsCompat?.getInsets(WindowInsetsCompat.Type.statusBars())
-    if (insets != null) {
-        val height = insets.top - insets.bottom
-        if (height > 0)
-            return height
-    }
-
-    return ImmersionBar.getStatusBarHeight(this)
-}
 
 /**
  * 获取底部导航栏高度

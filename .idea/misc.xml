@@ -7,10 +7,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Project/ProjectForGit/SmartQrCode/app/src/main/res/layout/activity_main.xml" value="0.24375" />
-        <entry key="..\:/Project/ProjectForGit/SmartQrCode/app/src/main/res/layout/fragment_make.xml" value="0.24375" />
-        <entry key="..\:/Project/ProjectForGit/SmartQrCode/app/src/main/res/layout/fragment_scan.xml" value="0.24375" />
-        <entry key="..\:/Project/ProjectForGit/SmartQrCode/app/src/main/res/layout/fragment_set.xml" value="0.24375" />
         <entry key="..\:/soft/Project/ProjectforAs/SmartQrCode/app/src/main/res/drawable/ic_launcher_background.xml" value="0.278125" />
         <entry key="..\:/soft/Project/ProjectforAs/SmartQrCode/app/src/main/res/layout/activity_main.xml" value="0.16875" />
         <entry key="..\:/soft/Project/ProjectforAs/SmartQrCode/app/src/main/res/layout/fragment_make.xml" value="0.26197916666666665" />
@@ -19,6 +15,25 @@
         <entry key="..\:/soft/Project/ProjectforAs/SmartQrCode/switchbot-common/src/main/res/drawable/alert_btn_sel.xml" value="0.16510416666666666" />
         <entry key="..\:/soft/Project/ProjectforAs/SmartQrCode/switchbot-common/src/main/res/layout/dialog_family_share_bottom.xml" value="0.18229166666666666" />
         <entry key="..\:/soft/Project/ProjectforAs/SmartQrCode/switchbot-common/src/main/res/layout/view_title_right_text_and_arrow_mutil_line.xml" value="0.18229166666666666" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/drawable/add_remote_btn_selector.xml" value="0.1984375" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/drawable/allow_log_icon.xml" value="0.1984375" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/drawable/banner_selector_point_hollow.xml" value="0.15520833333333334" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/drawable/blue_radiu_no_border.xml" value="0.1984375" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/drawable/bulb_status_check_selector.xml" value="0.1984375" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/drawable/green_choose_icon.xml" value="0.11666666666666667" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/drawable/no_tip_icon.xml" value="0.11666666666666667" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/drawable/red_choose_icon.xml" value="0.11666666666666667" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/drawable/scenes_condition_title_icon.xml" value="0.11666666666666667" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/drawable/selector_main_delete_icon.xml" value="0.11666666666666667" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/drawable/sign_show_password.xml" value="0.11666666666666667" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/drawable/svg_camera_setting_allow_push.xml" value="0.11666666666666667" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/layout/activity_debug_kit.xml" value="0.19166666666666668" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/layout/activity_video_player.xml" value="0.18229166666666666" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/layout/dialog_edit_single.xml" value="0.10052083333333334" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/layout/dialog_family_share_bottom.xml" value="0.10052083333333334" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/layout/dialog_home_select.xml" value="0.10052083333333334" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/layout/dialog_scene_guide_bottom.xml" value="0.10052083333333334" />
+        <entry key="..\:/soft/Project/projectForGit/ZSmartQcode/switchbot-common/src/main/res/layout/wo_exo_player_control_view.xml" value="0.1390625" />
       </map>
     </option>
   </component>

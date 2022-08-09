@@ -10,10 +10,7 @@ import android.content.pm.PackageManager
 import android.content.pm.ResolveInfo
 import android.net.Uri
 import android.os.Build
-import androidx.browser.customtabs.CustomTabsIntent
 import com.blankj.utilcode.util.ActivityUtils
-import com.theswitchbot.common.widget.web.CustomTabActivityHelper
-import com.theswitchbot.common.widget.web.WebviewFallback
 import org.apache.commons.lang3.ArrayUtils
 import android.content.SharedPreferences
 import com.blankj.utilcode.util.FileUtils
@@ -93,15 +90,6 @@ object AppUtil {
             }
         }
         return "com.android.chrome"
-    }
-
-    fun openUrl(activity:Activity,url:String){
-        val uri = Uri.Builder()
-            .scheme("https")
-            .appendEncodedPath(url)
-            .build()
-        val customTabsIntent1 = CustomTabsIntent.Builder().build()
-        CustomTabActivityHelper.openCustomTab(activity, customTabsIntent1, uri, WebviewFallback())
     }
 
     fun isAlexaAppInstall(context: Context): Boolean {

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="false" android:drawable="@mipmap/scenes_condition_title_disable_icon"/>
-    <item android:drawable="@mipmap/scenes_condition_title_enable_icon"/>
-</selector>

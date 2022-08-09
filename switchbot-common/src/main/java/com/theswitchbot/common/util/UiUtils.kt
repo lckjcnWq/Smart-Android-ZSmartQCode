@@ -52,14 +52,14 @@ inline fun Fragment.initTitleBar(topBar: QMUITopBarLayout,
                                                       @Nullable @StringRes centerTextRes: Int? = null,
                                                       @Nullable @ColorRes centerTextColor: Int? = null,
                                                       @Nullable centerText:String?=null,
-                                                      @DrawableRes leftImageRes: Int? = R.mipmap.common_back_black,
+//                                                      @DrawableRes leftImageRes: Int? = R.mipmap.common_back_black,
                                                       @Nullable @StringRes rightTextRes: Int? = null,
                                                       @ColorRes rightTextColor: Int = R.color.cc2,
                                                       @ColorRes bgColorRes: Int = R.color.white,
                                                       isStatusFontDark: Boolean = true,
                                                       useMultipleStatusLayout: Boolean = false,
                                                       crossinline rightTextClick: (view: View) -> Unit = {}):QMUITopBarWrapper{
-    return requireActivity().initTitleBar(topBar, centerTextRes, centerTextColor,centerText, leftImageRes, rightTextRes, rightTextColor, bgColorRes, isStatusFontDark, useMultipleStatusLayout, rightTextClick)
+    return requireActivity().initTitleBar(topBar, centerTextRes, centerTextColor,centerText, rightTextRes, rightTextColor, bgColorRes, isStatusFontDark, useMultipleStatusLayout, rightTextClick)
 }
 
 /**
@@ -85,7 +85,7 @@ inline fun Activity.initTitleBar(
     @Nullable @StringRes centerTextRes: Int? = null,
     @Nullable @ColorRes centerTextColor: Int? = null,
     @Nullable centerText:String?=null,
-    @DrawableRes leftImageRes: Int? = R.mipmap.common_back_black,
+//    @DrawableRes leftImageRes: Int? = R.mipmap.common_back_black,
     @Nullable @StringRes rightTextRes: Int? = null,
     @ColorRes rightTextColor: Int = R.color.cc4,
     @ColorRes bgColorRes: Int = R.color.white,
@@ -124,12 +124,12 @@ inline fun Activity.initTitleBar(
     val params = RelativeLayout.LayoutParams(dp2px(40), dp2px(40))
     params.addRule(RelativeLayout.CENTER_VERTICAL)
     leftImageView.layoutParams = params
-    if (leftImageRes!=null) {
-        leftImageView.setImageResource(leftImageRes)
-        leftImageView.setOnClickListener {
-            onBackPressed()
-        }
-    }
+//    if (leftImageRes!=null) {
+//        leftImageView.setImageResource(leftImageRes)
+//        leftImageView.setOnClickListener {
+//            onBackPressed()
+//        }
+//    }
 
     //左右的padding都设置，增加点击事件能够响应的范围
     leftImageView.setPadding(dp2px(8), dp2px(8), dp2px(8), dp2px(8))
@@ -278,9 +278,8 @@ fun Context.px2dp(dp: Int): Int {
  */
 fun ImageView.load(
     path: String?,
-    @DrawableRes emptyDrawableRes: Int = R.mipmap.pic_place_holder,
 ) {
-    Glide.with(this).load(path).error(emptyDrawableRes).placeholder(emptyDrawableRes).into(this)
+    Glide.with(this).load(path).into(this)
 }
 
 /**
@@ -288,9 +287,8 @@ fun ImageView.load(
  */
 fun ImageView.load(
     resId: Int?,
-    @DrawableRes emptyDrawableRes: Int = R.mipmap.pic_place_holder,
 ) {
-    Glide.with(this).load(resId).error(emptyDrawableRes).placeholder(emptyDrawableRes).into(this)
+    Glide.with(this).load(resId).into(this)
 }
 
 /**

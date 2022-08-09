@@ -2,26 +2,9 @@ package com.theswitchbot.common.ext
 
 import com.google.gson.JsonSyntaxException
 import com.theswitchbot.common.logger.Logger
-import com.theswitchbot.common.net.dto.NetResponse
 import com.theswitchbot.common.util.gson
 import java.lang.RuntimeException
 import java.lang.reflect.Type
-
-/**
- * 提取网络请求响应结果的内容
- * 根据响应数据的code是否是成功来判断
- */
-inline fun <T> toApiResult(defVal: T? = null, block: ()-> NetResponse<T>?): T? {
-    try {
-        val response = block.invoke()
-        if (response != null && response.isSuccessBiz()) {
-           return response.body
-        }
-    } catch (ex: Exception) {
-        Logger.e(ex, ex.message)
-    }
-    return defVal
-}
 
 
 
