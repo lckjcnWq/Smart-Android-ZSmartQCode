@@ -22,6 +22,11 @@ class App : Application() {
         SpAccessor.init(this)
         parseManifest()
         ActivityManager.init(this)
+        Logger.addLogAdapter(object : AndroidLogAdapter(SimpleFormatStrategy()) {
+            override fun isLoggable(priority: Int, tag: String?): Boolean {
+                return BuildConfig.DEBUG
+            }
+        })
     }
 
     private fun parseManifest() {

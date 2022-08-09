@@ -4,9 +4,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.kandao.smartqrcode.ui.fragmnt.MakeFragment
-import com.kandao.smartqrcode.ui.fragmnt.ScanFragment
-import com.kandao.smartqrcode.ui.fragmnt.SetFragment
+import com.kandao.smartqrcode.ui.fragment.MakeFragment
+import com.kandao.smartqrcode.ui.fragment.ScanFragment
+import com.kandao.smartqrcode.ui.fragment.SetFragment
 import java.util.Collections
 import java.util.EnumMap
 
