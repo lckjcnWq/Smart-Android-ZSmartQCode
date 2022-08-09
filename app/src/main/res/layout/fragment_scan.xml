@@ -33,10 +33,11 @@
       app:laserColor="@color/colorAccent"
       app:laserStyle="grid"
       />
-  <com.qmuiteam.qmui.widget.QMUITopBarLayout
-      android:id="@+id/topbar"
-      android:layout_width="match_parent"
-      android:layout_height="?attr/qmui_topbar_height"
-      app:layout_constraintTop_toTopOf="parent"
-      />
+<!--  <com.qmuiteam.qmui.widget.QMUITopBarLayout-->
+<!--      android:id="@+id/topbar"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="?attr/qmui_topbar_height"-->
+<!--      app:layout_constraintTop_toTopOf="parent"-->
+<!--      />-->
+  <include layout="@layout/toolbar_capture"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,17 +2,17 @@ package com.kandao.smartqrcode.ui.fragment
 
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
+import androidx.appcompat.widget.Toolbar
 import com.google.zxing.Result
 import com.kandao.smartqrcode.R
+import com.kandao.smartqrcode.utils.StatusBarUtils
 import com.king.zxing.CaptureFragment
 import com.king.zxing.DecodeConfig
 import com.king.zxing.DecodeFormatManager
 import com.king.zxing.analyze.MultiFormatAnalyzer
 import com.king.zxing.config.ResolutionCameraConfig
-import com.qmuiteam.qmui.widget.QMUITopBarLayout
-import com.theswitchbot.common.ext.showToast
 import com.theswitchbot.common.logger.Logger
-import com.theswitchbot.common.util.initTitleBar
 
 /**
  * <pre>
@@ -33,7 +33,10 @@ class ScanFragment : CaptureFragment() {
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
-    initTitleBar(rootView.findViewById(R.id.topbar), centerText = getString(R.string.main_menu_title_scan))
+    val toolbar: Toolbar = rootView.findViewById<Toolbar>(R.id.toolbar)
+    StatusBarUtils.immersiveStatusBar(requireActivity(), toolbar, 0.2f)
+    val tvTitle = rootView.findViewById<TextView>(R.id.tvTitle)
+    tvTitle.text = getString(R.string.main_menu_title_scan)
   }
 
   override fun initCameraScan() {
@@ -63,5 +66,11 @@ class ScanFragment : CaptureFragment() {
     Logger.d("onScanResultCallback result:${result.text}")
     cameraScan.setAnalyzeImage(false)
     return true
+  }
+
+  fun onClick(v: View) {
+    when (v.id) {
+      R.id.ivLeft -> requireActivity().finish()
+    }
   }
 }
