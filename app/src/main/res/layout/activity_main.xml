@@ -21,5 +21,6 @@
       android:layout_gravity="bottom"
       android:background="@color/qmui_config_color_white"
       app:layout_constraintBottom_toBottomOf="parent"
+      app:qmui_tab_icon_position="top"
       />
 </androidx.constraintlayout.widget.ConstraintLayout>

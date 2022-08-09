@@ -62,7 +62,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     val builder = binding.mainTabs.tabBuilder()
     builder.setTypeface(null, Typeface.DEFAULT_BOLD)
     builder.setSelectedIconScale(1f)
-      .setTextSize(getDimen(dimen.t3), getDimen(dimen.t3))
+      .setTextSize(getDimen(dimen.t2), getDimen(dimen.t2))
       .setIconTextGap(7.dp2Px())
       .setDynamicChangeIconColor(false)
       .skinChangeWithTintColor(false)

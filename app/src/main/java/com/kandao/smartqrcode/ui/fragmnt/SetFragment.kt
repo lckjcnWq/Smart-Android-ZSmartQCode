@@ -1,7 +1,5 @@
 package com.kandao.smartqrcode.ui.fragmnt
 
-import com.kandao.smartqrcode.databinding.FragmentMakeBinding
-import com.kandao.smartqrcode.databinding.FragmentScanBinding
 import com.kandao.smartqrcode.databinding.FragmentSetBinding
 import com.theswitchbot.common.ui.BaseFragment
 
