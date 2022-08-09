@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white">
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/attention_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/remove_all_family_data"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="21dp"
+        android:layout_height="0.5dp"
+        android:background="@color/cc1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content_tv" />
+
+    <TextView
+        android:id="@+id/cancel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="@string/dialog_cancel"
+        android:textColor="@color/cc4"
+        android:textSize="@dimen/sp_16"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/divider_view"
+        app:layout_constraintEnd_toStartOf="@+id/divider_view2"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+    <View
+        android:id="@+id/divider_view2"
+        android:layout_width="0.5dp"
+        android:layout_height="55dp"
+        android:background="@color/cc1"
+        app:layout_constraintEnd_toStartOf="@+id/sure_tv"
+        app:layout_constraintStart_toEndOf="@+id/cancel_tv"
+        app:layout_constraintTop_toBottomOf="@+id/divider_view"
+       />
+
+    <TextView
+        android:id="@+id/sure_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="@string/str_ok"
+        android:textColor="@color/c1"
+        android:textSize="@dimen/sp_16"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/divider_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider_view2"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

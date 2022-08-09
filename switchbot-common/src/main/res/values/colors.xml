@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+
+    <color name="red">#eb3243</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="transparent2">#4d000000</color>
+    <color name="transparent3">#68000000</color>
+
+    <color name="c1">#E0393A</color>
+    <color name="c2">#FBAB11</color>
+    <color name="c3">#00D668</color>
+    <color name="c4">#0088cc</color>
+    <color name="c5">#9CA1A4</color>
+    <color name="c6">#E08839</color>
+
+
+    <color name="cc1">#DADDDF</color>
+    <color name="cc2">#A3ABB0</color>
+    <color name="cc3">#6C717C</color>
+    <color name="cc4">#333844</color>
+
+
+
+
+
+    <color name="gray_5">#f4f4f2</color>
+    <color name="text_grey1">#FFA3ABB0</color>
+    <color name="page_bg_gray">#F7F7F8</color>
+    <color name="divide_line">#1A000000</color>
+    <color name="grey_200">#C8C8C8</color>
+    <color name="grey_300">#8D9496</color>
+    <color name="grey_400">#5A5D5E</color>
+    <color name="off_line_text_color">#8E97A1</color>
+    <color name="text_disable_color">#C7C9CC</color>
+    <color name="default_blue_light">#477eef</color>
+    <color name="blue">#5e8ef1</color>
+    <color name="grey_text_color">#9B9B9B</color>
+    <color name="bg_device_info_edittext">#F4F4F4</color>
+    <color name="view_disable_color">#DFE3E5</color>
+    <color name="background">#F7F7F7</color>
+    <color name="curtain_control_bg">#F1F2F4</color>
+    <color name="title_text_grey_color">#26999696</color>
+    <color name="log_syncing_bg">#FFE0E8F4</color>
+    <color name="log_sync_text">#FF477EEF</color>
+    <color name="log_sync_success_bg">#FFD2F0E0</color>
+
+    <color name="rsbColorSeekBarDefault">#c3c3c3</color>
+    <color name="rsbColorThumbPressed">#FFE7E7E7</color>
+    <color name="rsbColorThumbDefault">#FFFFFF</color>
+    <color name="rsbColorThumbBorder">#FFD7D7D7</color>
+    <color name="darker_gray">#333333</color>
+    <color name="colorAccent">#eb3243</color>
+    <color name="grey_type_20f">#33DADDDF</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_orange_dark">#ffff8800</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="holo_purple">#ffaa66cc</color>
+
+    <color name="light_blue">#F8F9FB</color>
+    <!--sign in-->
+    <color name="sign_in_hint_color">@color/cc1</color>
+    <color name="sign_bg_color">#66000000</color>
+    <color name="sign_alert_text_color">@color/colorAccent</color>
+    <color name="sign_policy_text_color">@color/colorAccent</color>
+
+    <color name="orange">#fffaaa00</color>
+    <color name="alizarin">#e74c3c</color>
+    <color name="grey_color_30">#4DDADDDF</color>
+    <color name="line_default_color">#e5e5e5</color>
+    <color name="action_sheet_blue">#037BFF</color>
+
+    <color name="button_gray">#bababa</color>
+    <color name="common_text_color">#FF333844</color>
+    <color name="light_strip_menu">#1affffff</color>
+    <color name="bt_grey_circle">#4dffffff</color>
+    <color name="lock_progress_bg_color">#FF5B5F69</color>
+    <color name="green_00D668">#FF00D668</color>
+    <color name="a_white">#FFFBEBEB</color>
+    <color name="b_white">#DADDDF</color>
+    <color name="white_20">#33DADDDF</color>
+
+    <color name="pad_start_color">#00F26B6C</color>
+    <color name="pad_end_color">#FFE0393A</color>
+    <color name="pad_bg_color">#FFF9F8F8</color>
+    <color name="a_black_color">#1A000000</color>
+    <color name="text_scene_grey">#FF999BA1</color>
+    <color name="b_black_color">#FF9CA1A4</color>
+    <color name="little_red_30">#4DFBEBEB</color>
+    <color name="white_5">#0DFFFFFF</color>
+
+    <color name="ptwo_green_color">#00D668</color>
+    <color name="ptwo_gray_color">#DADDDF</color>
+    <color name="white_80">#80FFFFFF</color>
+
+    <color name="scenes_tab_text_normal_color">#9CA1A4</color>
+    <color name="scenes_tab_text_selected_color">#333844</color>
+    <color name="scenes_end_text_color">#9CA1A4</color>
+    <color name="fe">#fffefefe</color>
+    <color name="fa">#FFFAFAFA</color>
+</resources>

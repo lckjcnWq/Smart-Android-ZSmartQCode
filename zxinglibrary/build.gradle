@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.yuzhiqiang1993'
+
+apply from: "${rootDir}/switchbot.gradle"
+
+android {
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api files('libs/core-3.4.1.jar')
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation "androidx.vectordrawable:vectordrawable:1.1.0"
+    implementation "androidx.annotation:annotation:1.2.0"
+
+}

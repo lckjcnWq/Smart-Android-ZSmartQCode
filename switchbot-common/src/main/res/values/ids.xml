@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="left_back_icon" type="id" />
+    <item name="top_bar_right_icon" type="id" />
+    <item name="top_bar_right_icon1" type="id" />
+    <item name="top_bar_right_icon2" type="id" />
+    <item name="top_bar_left_icon1" type="id" />
+    <item name="top_bar_left_icon2" type="id" />
+    <item name="top_bar_left_linear" type="id" />
+    <item name="top_bar_left_tab_layout" type="id" />
+    <item name="top_bar_right_text" type="id" />
+    <item name="top_bar_left_text" type="id" />
+    <item name="recycler_empty_item" type="id" />
+    <item name="view_click_time" type="id" />
+    <item name="view_click_count" type="id" />
+    <item name="last_toast_time" type="id" />
+</resources>

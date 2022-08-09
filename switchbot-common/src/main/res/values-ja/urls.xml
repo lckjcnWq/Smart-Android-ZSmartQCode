@@ -1,0 +1,82 @@
+<resources>
+    <string name="text_scene_google_home_path">support.switch-bot.com/hc/ja/articles/360040190213-%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E6%89%8B%E5%8B%95%E5%AE%9F%E8%A1%8C%E3%81%AE-%E3%82%B7%E3%83%BC%E3%83%B3-%E3%81%AF-Google-Home-%E3%81%8B%E3%82%89%E9%9F%B3%E5%A3%B0%E6%93%8D%E4%BD%9C%E3%81%8C%E5%8F%AF%E8%83%BD</string>
+    <string name="text_scene_alexa_path">support.switch-bot.com/hc/ja/articles/360039688794</string>
+    <string name="text_alexa_domain">www.amazon.jp</string>
+    <string name="text_scene_ifttt_path">support.switch-bot.com/hc/ja/articles/360039748974</string>
+    <string name="text_guide_ifttt">/hc/ja/articles/360037747734</string>
+    <string name="text_guide_alexa">/hc/ja/articles/360037747414</string>
+    <string name="text_guide_google_home">/hc/ja/articles/360037747514</string>
+    <string name="text_meter_guide_alexa">/hc/ja/articles/360038241993</string>
+    <string name="text_meter_guide_google_home">/hc/ja/articles/360037755234</string>
+    <string name="text_humidifier_guide_alexa">/hc/ja/articles/360040001313</string>
+    <string name="text_humidifier_guide_google_home">/hc/ja/articles/360039941393</string>
+    <string name="text_curtain_guide_alexa">/hc/ja/articles/360051462654</string>
+    <string name="text_curtain_guide_google_home">/hc/ja/articles/360051462694</string>
+    <string name="text_curtain_guide_ifttt">/hc/ja/articles/360052804914</string>
+    <string name="text_curtain_guide_line">/hc/ja/articles/360050229913</string>
+    <string name="text_domain">www.switchbot.jp</string>
+    <string name="text_support_domain">support.switch-bot.com</string>
+    <string name="text_faq_path">/hc/ja</string>
+
+    <string name="curtain_rail_i2_guide_video_address">"https://switchbot.s3.amazonaws.com/curtain/SwitchBot-Curtain-I-Rail-2-How-to-installation-JP2109.mp4"</string>
+    <string name="curtain_rail_uninstall_guide_video_address">"https://s3.amazonaws.com/www.wohand.com/version/wocaotech/tutorial/curtain/SwitchBot-Curtain-Remove-IRail-JP.mp4"</string>
+    <string name="curtain_rail_u_guide_video_address">"https://s3.amazonaws.com/www.wohand.com/version/wocaotech/tutorial/curtain/SwitchbotCurtainInstallingTutorialJp-Small-App.m4v"</string>
+    <string name="curtain_rail_i_guide_video_address">"https://s3.amazonaws.com/www.wohand.com/version/wocaotech/tutorial/curtain/SwitchBot-Curtain-Installation-IRail-JP.m4v"</string>
+    <string name="curtain_roma_grommet_video_address">"https://s3.amazonaws.com/www.wohand.com/version/wocaotech/tutorial/curtain/Curtain-Rod-C-JP-Small.mp4"</string>
+    <string name="curtain_roma_grommet_alter_video_address">"https://s3.amazonaws.com/www.wohand.com/version/wocaotech/tutorial/curtain/Curtain-Rod-F-JP-Small.mp4"</string>
+    <string name="curtain_roma_ring_top_video_address">"https://s3.amazonaws.com/www.wohand.com/version/wocaotech/tutorial/curtain/Curtain-Rod-B-JP-Small.mp4"</string>
+    <string name="curtain_roma_back_tab_video_address">"https://s3.amazonaws.com/www.wohand.com/version/wocaotech/tutorial/curtain/Curtain-Rod-E-JP-Small.mp4"</string>
+    <string name="curtain_roma_tab_top_video_address">"https://s3.amazonaws.com/www.wohand.com/version/wocaotech/tutorial/curtain/Curtain-Rod-D-JP-Small.mp4"</string>
+    <string name="privacy_policy_url">http://support.switch-bot.com/hc/ja/articles/360046909813</string>
+    <string name="switchbot_devices">support.switch-bot.com/hc/ja/articles/360046910173</string>
+    <string name="switchbot_bot">support.switch-bot.com/hc/ja/articles/360046732214</string>
+    <string name="switchbot_mini">support.switch-bot.com/hc/ja/articles/360047378973</string>
+    <string name="switchbot_plus">support.switch-bot.com/hc/ja/articles/360046732234</string>
+    <string name="switchbot_meter">support.switch-bot.com/hc/ja/articles/360046732274</string>
+    <string name="switchbot_plug">support.switch-bot.com/hc/ja/articles/360041954473</string>
+    <string name="switchbot_humi">support.switch-bot.com/hc/ja/articles/360046733294</string>
+    <string name="switchbot_hubmini_faq">support.switch-bot.com/hc/ja/articles/1500007422562</string>
+    <string name="switchbot_hubplus_faq">support.switch-bot.com/hc/ja/articles/1500007424262</string>
+    <string name="switchbot_setting_hub_faq">support.switch-bot.com/hc/ja/articles/360060471254</string>
+    <string name="switchbot_curtain_faq">support.switch-bot.com/hc/ja/articles/1500010103181</string>
+    <string name="switchbot_plug_faq">support.switch-bot.com/hc/ja/articles/1500002027462</string>
+    <string name="switchbot_motion_faq">support.switch-bot.com/hc/ja/articles/1500012030482</string>
+    <string name="switchbot_contact_faq">support.switch-bot.com/hc/ja/articles/1500012098121</string>
+    <string name="switchbot_button_faq">support.switch-bot.com/hc/ja/sections/1500002790381</string>
+    <string name="switchbot_humidifier_faq">switchbot.zendesk.com/hc/ja/articles/1500007441641</string>
+    <string name="switchbot_ipc_wifi_faq">support.switch-bot.com/hc/ja/articles/1500013110161</string>
+    <string name="switchbot_pan_tilt_wifi_faq">support.switch-bot.com/hc/ja/sections/4411739808663</string>
+    <string name="switchbot_ipc_faq">support.switch-bot.com/hc/ja/categories/4402872628759</string>
+    <string name="switchbot_pan_tilt_faq">support.switch-bot.com/hc/ja/categories/4411678651671</string>
+
+    <string name="switchbot_lock_faq">support.switch-bot.com/hc/ja/sections/4408365197079</string>
+    <string name="switchbot_lock_auto_lock_help">switchbot.zendesk.com/hc/ja/articles/4413812920471</string>
+
+    <string name="switchbot_bulb_faq">support.switch-bot.com/hc/ja/categories/4403357832471</string>
+    <string name="switchbot_bulb_group_faq">support.switch-bot.com/hc/ja/articles/4408119192087</string>
+
+    <string name="switchbot_plug_mini_faq">support.switch-bot.com/hc/ja/sections/1500002764102</string>
+
+    <string name="alexa_domain_path">/hc/ja/articles/360038373233</string>
+    <string name="google_home_domain_path">/hc/ja/articles/360038372973</string>
+    <string name="alexa_domain_hub_mini_path">/hc/ja/articles/360038239753</string>
+    <string name="google_home_domain_hub_mini_path">/hc/ja/articles/360038372973</string>
+    <string name="lock_install_guide_video">https://switchbot.s3.amazonaws.com/curtain/SwitchBot-Lock-How-to-installation-JP2112.mp4</string>
+    <string name="lock_ajar_guide_video">https://switchbot.s3.amazonaws.com/lock/lock_jam.mp4</string>
+    <string name="use_of_terms_url">http://support.switch-bot.com/hc/ja/articles/360046272354</string>
+    <string name="switchbot_hub_wifi_faq">support.switch-bot.com/hc/ja/articles/4403394297751</string>
+    <string name="switchbot_strip_faq">support.switch-bot.com/hc/ja/sections/4411673770007</string>
+
+    <string name="text_lock_guide_google_home">/hc/en-us/articles/4413818449943</string>
+    <string name="text_lock_guide_alexa">/hc/ja/articles/4413818445463</string>
+    <string name="text_lock_guide_ifttt">/hc/ja/articles/4413826222999</string>
+    <string name="text_lock_guide_line">/hc/ja/articles/4413818465303</string>
+    <string name="meter_add_faq">switchbot.zendesk.com/hc/ja/articles/1500007440222</string>
+    <string name="meter_setting_faq">support.switch-bot.com/hc/ja/articles/1500007440402</string>
+    <string name="meter_plus_add_faq">switchbot.zendesk.com/hc/ja/articles/1500007440222</string>
+    <string name="meter_plus_setting_faq">support.switch-bot.com/hc/ja/sections/1500002789701</string>
+    <string name="switchbot_bot_faq">support.switch-bot.com/hc/ja/articles/1500007443761</string>
+
+    <string name="wifi_config_error_faq">support.switch-bot.com/hc/ja/articles/4417418051095</string>
+
+</resources>

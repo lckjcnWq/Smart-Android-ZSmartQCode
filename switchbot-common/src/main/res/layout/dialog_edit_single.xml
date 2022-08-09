@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_corner_up_gray">
+
+    <TextView
+        android:id="@+id/editDialogCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_marginBottom="@dimen/dp_11"
+        android:padding="@dimen/dp_6"
+        android:text="@string/dialog_cancel"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toTopOf="@+id/nickname_divider"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editDialogTitle"
+        android:layout_width="wrap_content"
+        android:maxWidth="180dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:text="@string/please_input_family_invate_code"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editDialogCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editDialogOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:padding="@dimen/dp_6"
+        android:text="@string/dialog_action_ok"
+        android:textColor="@color/cc2"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editDialogCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/nickname_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divide_line"
+        app:layout_constraintBottom_toTopOf="@+id/dialogEditLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDialogCancel" />
+
+    <LinearLayout
+        android:id="@+id/dialogEditLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/dp_32"
+        android:background="@drawable/shape_corner_fafafa_r4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_divider">
+
+        <EditText
+            android:id="@+id/dialogEditText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_48"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColorHint="@color/cc2"
+            android:textColor="@color/common_text_color"
+            android:textCursorDrawable="@drawable/edit_cursor"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20"
+            android:textSize="@dimen/sp_14"
+            tools:ignore="LabelFor" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/dialogClearText"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:padding="@dimen/dp_4"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/text_clear" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <array name="waveSideBarLetters">
+        <item>*</item>
+        <item>#</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </array>
+
+    <array name="select_white_colors">
+        <item>#FF0000</item>
+        <item>#00FF00</item>
+        <item>#0000FF</item>
+        <item>#F9812A</item>
+        <item>#FFFFFF</item>
+
+        <item>#F5C043</item>
+        <item>#E8622C</item>
+        <item>#EA336F</item>
+        <item>#793CE3</item>
+        <item>#4E84F7</item>
+
+        <item>#EE7DC0</item>
+        <item>#FEF952</item>
+        <item>#B5FC73</item>
+        <item>#8DDFFB</item>
+        <item>#C495F8</item>
+
+        <item>#56BBB7</item>
+        <item>#6AC9C6</item>
+        <item>#85D5D5</item>
+        <item>#ADE8ED</item>
+        <item>#D0FDF9</item>
+
+        <item>#226B22</item>
+        <item>#69A443</item>
+        <item>#C2D142</item>
+        <item>#DDDF48</item>
+        <item>#E3E54E</item>
+
+        <item>#BE5F24</item>
+        <item>#D37735</item>
+        <item>#F09A38</item>
+        <item>#F3AE3D</item>
+        <item>#F8D447</item>
+
+        <item>#EC60EE</item>
+        <item>#ED6E5D</item>
+        <item>#E18583</item>
+        <item>#E79B91</item>
+        <item>#EDB0A0</item>
+
+        <item>#DF7C78</item>
+        <item>#DB6169</item>
+        <item>#C94351</item>
+        <item>#DB2F20</item>
+        <item>#CD2B1D</item>
+
+        <item>#6731B6</item>
+        <item>#9C66C6</item>
+        <item>#AE99D7</item>
+        <item>#BCCFE8</item>
+        <item>#C6F8F7</item>
+
+        <item>#89D3FB</item>
+        <item>#ED78A5</item>
+        <item>#F19C78</item>
+        <item>#D0FD50</item>
+        <item>#62D3FA</item>
+    </array>
+
+</resources>
