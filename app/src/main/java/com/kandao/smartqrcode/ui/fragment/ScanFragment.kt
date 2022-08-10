@@ -55,9 +55,6 @@ class ScanFragment : CaptureFragment() {
       .setCameraConfig(ResolutionCameraConfig(requireContext())) //设置CameraConfig，可以根据自己的需求去自定义配置
       .setNeedAutoZoom(true) //二维码太小时可自动缩放，默认为false
       .setNeedTouchZoom(true) //支持多指触摸捏合缩放，默认为true
-//      .setDarkLightLux(45f) //设置光线足够暗的阈值（单位：lux），需要通过{@link #bindFlashlightView(View)}绑定手电筒才有效
-//      .setBrightLightLux(100f) //设置光线足够明亮的阈值（单位：lux），需要通过{@link #bindFlashlightView(View)}绑定手电筒才有效
-//      .bindFlashlightView(ivFlashlight) //绑定手电筒，绑定后可根据光线传感器，动态显示或隐藏手电筒按钮
       .setOnScanResultCallback(this)
       .setAnalyzer(MultiFormatAnalyzer(decodeConfig))
       .setAnalyzeImage(true)

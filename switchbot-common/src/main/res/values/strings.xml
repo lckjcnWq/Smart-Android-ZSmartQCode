@@ -2512,8 +2512,13 @@ Appliances</string>
     <string name="main_menu_title_set">设置</string>
     <string name="permission_camera">App扫码需要用到拍摄权限</string>
     <string name="permission_external_storage">App需要用到读写权限</string>
-    <string name="tips_scan_code">将二维码/条形码放入框内，即可自动扫描</string>
+    <string name="tips_scan_code">扫描二维码/条形码</string>
+    <string name="qr_code_tips1">手机不要离码太近</string>
+    <string name="qr_code_tips2">放大和缩小画面</string>
+    <string name="qr_code_tips3">将码置于框内扫描</string>
     <string name="qr_code">二维码</string>
     <string name="bar_code">条形码</string>
     <string name="scan_image">图库</string>
+    <string name="scan_common_question">常见问题</string>
+    <string name="scan_light">手电筒</string>
 </resources>

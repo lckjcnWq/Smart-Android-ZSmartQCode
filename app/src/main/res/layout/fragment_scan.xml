@@ -14,7 +14,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       app:labelText="@string/tips_scan_code"
-      app:labelTextLocation="bottom"
+      app:labelTextLocation="top"
       app:labelTextSize="14sp"
       />
   <ImageView
@@ -26,10 +26,27 @@
       android:layout_marginTop="@dimen/zxl_flashlight_margin_top" />
 
   <TextView
-      android:layout_gravity="bottom|end"
-      android:text="@string/Do_not_show_again"
+      android:text="@string/qr_code_tips1"
+      android:id="@+id/tvCodeTip"
+      android:textColor="@color/a_white"
+      android:layout_gravity="center"
+      android:layout_marginTop="@dimen/dp_150"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"/>
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+     <TextView
+         android:text="@string/action"
+         android:textColor="@color/white_80"
+         android:textSize="12sp"
+         android:drawableTop="@mipmap/icon_light_on"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+  </LinearLayout>
 
   <include layout="@layout/toolbar_capture"/>
 </FrameLayout>
