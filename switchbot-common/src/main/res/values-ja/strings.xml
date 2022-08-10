@@ -1,6 +1,5 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">SwitchBot</string>
-    <string name="main_menu_title_home">ホーム</string>
+  <string name="main_menu_title_home">ホーム</string>
     <string name="main_menu_title_scene">シーン</string>
     <string name="main_menu_title_mine">プロフィール</string>
     <string name="room_name">部屋の名称</string>

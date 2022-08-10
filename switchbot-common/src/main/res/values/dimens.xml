@@ -17,8 +17,8 @@
     <dimen name="t5">9sp</dimen>
 
     <dimen name="content_horizontal_margin">12dp</dimen>
-    <dimen name="home_tab_icon_width">25dp</dimen>
-    <dimen name="home_tab_text_height">25dp</dimen>
+    <dimen name="home_tab_icon_width">20dp</dimen>
+    <dimen name="home_tab_text_height">20dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <!--webview-->
 

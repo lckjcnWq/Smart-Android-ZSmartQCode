@@ -1,6 +1,5 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">"SwitchBot"</string>
-    <string name="main_menu_title_home">홈</string>
+  <string name="main_menu_title_home">홈</string>
     <string name="main_menu_title_scene">Scenes</string>
     <string name="main_menu_title_mine">MY</string>
     <string name="room_name">Room Name</string>

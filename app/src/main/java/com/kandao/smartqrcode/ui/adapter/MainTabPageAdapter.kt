@@ -33,8 +33,8 @@ class MainTabPageAdapter(private val mPages: List<Pager>, manager: FragmentManag
       fragmentMap[key]!!
     } else {
       val fragment = when (key) {
-        Pager.SCAN -> ScanFragment.newInstance()
         Pager.MAKE -> MakeFragment.newInstance()
+        Pager.SCAN -> ScanFragment.newInstance()
         Pager.SET -> SetFragment.newInstance()
       }
       fragmentMap[key] = fragment
