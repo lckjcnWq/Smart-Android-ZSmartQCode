@@ -17,8 +17,8 @@
   <com.qmuiteam.qmui.widget.tab.QMUITabSegment
       android:id="@+id/mainTabs"
       android:layout_width="match_parent"
-      android:layout_height="80dp"
-      android:layout_gravity="bottom"
+      android:layout_height="@dimen/dp_60"
+      android:layout_gravity="center_vertical"
       android:background="@color/qmui_config_color_white"
       app:layout_constraintBottom_toBottomOf="parent"
       app:qmui_tab_icon_position="top"

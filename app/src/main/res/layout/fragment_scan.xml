@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-  <ImageView
-      android:id="@+id/ivFlashlight"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="@dimen/dp_160"
-      android:src="@drawable/flash_selected_selector"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      />
 
   <androidx.camera.view.PreviewView
       android:id="@+id/previewView"
@@ -25,19 +14,27 @@
       android:id="@+id/viewfinderView"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      app:cornerColor="@color/colorPrimary"
-      app:frameColor="@color/colorPrimary"
       app:labelText="@string/tips_scan_code"
       app:labelTextLocation="bottom"
       app:labelTextSize="14sp"
-      app:laserColor="@color/colorAccent"
-      app:laserStyle="grid"
       />
-<!--  <com.qmuiteam.qmui.widget.QMUITopBarLayout-->
-<!--      android:id="@+id/topbar"-->
-<!--      android:layout_width="match_parent"-->
-<!--      android:layout_height="?attr/qmui_topbar_height"-->
-<!--      app:layout_constraintTop_toTopOf="parent"-->
-<!--      />-->
+  <ImageView
+      android:id="@+id/ivFlashlight"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/zxl_flashlight_selector"
+      android:layout_gravity="center"
+      android:layout_marginTop="@dimen/zxl_flashlight_margin_top"
+      />
   <include layout="@layout/toolbar_capture"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+  <TextView
+      android:layout_gravity="bottom|end"
+      android:layout_marginBottom="@dimen/dp_40"
+      android:layout_marginEnd="@dimen/dp_40"
+      android:textColor="@color/a_white"
+      android:gravity="center_horizontal"
+      android:drawableTop="@drawable/icon_photo"
+      android:text="@string/scan_image"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+</FrameLayout>
