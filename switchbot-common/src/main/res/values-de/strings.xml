@@ -1,6 +1,5 @@
 <resources xmlns:ns0="http://schemas.android.com/tools" xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">"SwitchBot"</string>
-    <string name="main_menu_title_home">Zuhause</string>
+  <string name="main_menu_title_home">Zuhause</string>
     <string name="main_menu_title_scene">Szenen</string>
     <string name="main_menu_title_mine">Profil</string>
     <string name="home_no_device">Kein Gerät gefunden! \n Tippen Sie auf das Plus-Symbol oben rechts, um ein Gerät hinzuzufügen.</string>

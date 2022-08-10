@@ -62,7 +62,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     val builder = binding.mainTabs.tabBuilder()
     builder.setTypeface(null, Typeface.DEFAULT_BOLD)
     builder.setSelectedIconScale(1f)
-      .setTextSize(getDimen(dimen.t2), getDimen(dimen.t2))
+      .setTextSize(getDimen(dimen.t3), getDimen(dimen.t3))
       .setIconTextGap(7.dp2Px())
       .setDynamicChangeIconColor(false)
       .skinChangeWithTintColor(false)
@@ -107,19 +107,18 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
       .build(this)
 
     binding.mainTabs.apply {
-      addTab(scanTab)
       addTab(makeCodeTab)
+      addTab(scanTab)
       addTab(setTab)
     }
   }
 
   private fun initPagers() {
-    val mPages = listOf(Pager.SCAN,Pager.MAKE, Pager.SET)
+    val mPages = listOf(Pager.MAKE,Pager.SCAN, Pager.SET)
     tabAdapter = MainTabPageAdapter(mPages,supportFragmentManager)
-    binding.mainPager.offscreenPageLimit=3
+    binding.mainPager.offscreenPageLimit=1
     binding.mainPager.adapter = tabAdapter
     binding.mainTabs.setupWithViewPager(binding.mainPager, false)
     binding.mainPager.setSwipeable(false)
   }
-
 }

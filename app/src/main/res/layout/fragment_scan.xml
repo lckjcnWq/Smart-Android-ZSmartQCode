@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-
   <androidx.camera.view.PreviewView
       android:id="@+id/previewView"
       android:layout_width="match_parent"
@@ -22,19 +21,15 @@
       android:id="@+id/ivFlashlight"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:src="@drawable/zxl_flashlight_selector"
       android:layout_gravity="center"
-      android:layout_marginTop="@dimen/zxl_flashlight_margin_top"
-      />
-  <include layout="@layout/toolbar_capture"/>
+      android:src="@drawable/zxl_flashlight_selector"
+      android:layout_marginTop="@dimen/zxl_flashlight_margin_top" />
+
   <TextView
       android:layout_gravity="bottom|end"
-      android:layout_marginBottom="@dimen/dp_40"
-      android:layout_marginEnd="@dimen/dp_40"
-      android:textColor="@color/a_white"
-      android:gravity="center_horizontal"
-      android:drawableTop="@drawable/icon_photo"
-      android:text="@string/scan_image"
+      android:text="@string/Do_not_show_again"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"/>
+
+  <include layout="@layout/toolbar_capture"/>
 </FrameLayout>
