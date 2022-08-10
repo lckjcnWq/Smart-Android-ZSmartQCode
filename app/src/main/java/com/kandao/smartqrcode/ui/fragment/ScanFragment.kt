@@ -65,7 +65,7 @@ class ScanFragment : CaptureFragment() {
 
   override fun onScanResultCallback(result: Result): Boolean {
     Logger.d("onScanResultCallback result:${result.text}")
-    cameraScan.setAnalyzeImage(false)
+//    cameraScan.setAnalyzeImage(false)
     return true
   }
 }
