@@ -24,6 +24,8 @@ import kotlinx.coroutines.launch
 object AppContants {
   const val KEY_BITMAP = "key_bitmap"
   const val KEY_CONTENT = "key_content"
+  const val playVoiceState = "playVoiceState"
+  const val vibrateState = "vibrateState"
 
   //所有一维码格式
   val getOneDimensionalFormats = listOf(

@@ -15,6 +15,7 @@ import com.kandao.smartqrcode.R
 import com.kandao.smartqrcode.R.string
 import com.kandao.smartqrcode.constant.AppContants
 import com.kandao.smartqrcode.ui.activity.ScanResultActivity
+import com.kandao.smartqrcode.ui.fragment.SetFragment.Companion
 import com.king.zxing.CaptureFragment
 import com.king.zxing.DecodeConfig
 import com.king.zxing.DecodeFormatManager
@@ -22,6 +23,7 @@ import com.king.zxing.analyze.MultiFormatAnalyzer
 import com.king.zxing.config.ResolutionCameraConfig
 import com.king.zxing.util.CodeUtils
 import com.theswitchbot.common.logger.Logger
+import com.theswitchbot.common.util.SpAccessor
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import pub.devrel.easypermissions.AfterPermissionGranted
@@ -118,8 +120,8 @@ class ScanFragment : CaptureFragment() {
       isSupportLuminanceInvert = true
       areaRectRatio = 0.8f
     }
-    cameraScan.setPlayBeep(true) //设置是否播放音效，默认为false
-      .setVibrate(true) //设置是否震动，默认为false
+    cameraScan.setPlayBeep(SpAccessor.getBool(AppContants.playVoiceState, true)) //设置是否播放音效，默认为false
+      .setVibrate(SpAccessor.getBool(AppContants.vibrateState, true)) //设置是否震动，默认为false
       .setCameraConfig(ResolutionCameraConfig(requireContext())) //设置CameraConfig，可以根据自己的需求去自定义配置
       .setNeedAutoZoom(true) //二维码太小时可自动缩放，默认为false
       .setNeedTouchZoom(true) //支持多指触摸捏合缩放，默认为true
@@ -185,12 +187,17 @@ class ScanFragment : CaptureFragment() {
 
   override fun onPause() {
     super.onPause()
+    cameraScan.setAnalyzeImage(false)
+    cameraScan.stopCamera()
     isFirstGo = false
   }
 
   override fun onResume() {
     super.onResume()
-    cameraScan.setAnalyzeImage(true)
+    cameraScan.setPlayBeep(SpAccessor.getBool(AppContants.playVoiceState, true)) //设置是否播放音效，默认为false
+      .setVibrate(SpAccessor.getBool(AppContants.vibrateState, true)) //设置是否震动，默认为false
+      .setAnalyzeImage(true)
+      .startCamera()
     isFirstGo = true
   }
 

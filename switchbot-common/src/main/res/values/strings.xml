@@ -2525,5 +2525,11 @@ Appliances</string>
     <string name="scan_copy">复制</string>
     <string name="scan_result">扫描结果</string>
     <string name="scan_has_copy">已复制到剪切板</string>
-    <string name="scan_open_url">打开链接</string>
+    <string name="set_play_voice">播放提示音</string>
+    <string name="set_mock">振动</string>
+    <string name="scan_open_url">打开外链</string>
+    <string name="set_question">常见问题</string>
+    <string name="set_privacy">隐私政策</string>
+    <string name="set_report">免责申明</string>
+    <string name="set_report_content">二维码扫描王是用于扫描和生成二维码的攻击。因此，请勿使用二维码进行违法行为。</string>
 </resources>

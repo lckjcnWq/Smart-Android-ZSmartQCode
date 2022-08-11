@@ -10,7 +10,12 @@
         <entry key="..\:/Project/ProjectForGit/SmartQrCode/app/src/main/res/layout/activity_scan_result.xml" value="0.16" />
         <entry key="..\:/Project/ProjectForGit/SmartQrCode/app/src/main/res/layout/custom_pictxt.xml" value="0.264" />
         <entry key="..\:/Project/ProjectForGit/SmartQrCode/app/src/main/res/layout/fragment_scan.xml" value="0.14130434782608695" />
+        <entry key="..\:/Project/ProjectForGit/SmartQrCode/app/src/main/res/layout/fragment_set.xml" value="0.2" />
+        <entry key="..\:/Project/ProjectForGit/SmartQrCode/switchbot-common/src/main/res/drawable/alert_dialog_bg.xml" value="0.1485" />
         <entry key="..\:/Project/ProjectForGit/SmartQrCode/switchbot-common/src/main/res/drawable/shape_corner_up.xml" value="0.179" />
+        <entry key="..\:/Project/ProjectForGit/SmartQrCode/switchbot-common/src/main/res/layout/alert_dialog_bg.xml" value="0.14635416666666667" />
+        <entry key="..\:/Project/ProjectForGit/SmartQrCode/switchbot-common/src/main/res/layout/dialog_alert.xml" value="0.14635416666666667" />
+        <entry key="..\:/Project/ProjectForGit/SmartQrCode/switchbot-common/src/main/res/layout/dialog_view_binding.xml" value="0.14635416666666667" />
         <entry key="..\:/soft/Project/ProjectforAs/SmartQrCode/app/src/main/res/drawable/ic_launcher_background.xml" value="0.278125" />
         <entry key="..\:/soft/Project/ProjectforAs/SmartQrCode/app/src/main/res/layout/activity_main.xml" value="0.16875" />
         <entry key="..\:/soft/Project/ProjectforAs/SmartQrCode/app/src/main/res/layout/fragment_make.xml" value="0.26197916666666665" />

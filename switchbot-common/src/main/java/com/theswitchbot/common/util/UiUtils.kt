@@ -63,6 +63,27 @@ inline fun Fragment.initTitleBar(topBar: QMUITopBarLayout,
 }
 
 /**
+ * 点击防抖，默认300ms内防抖
+ */
+fun View.onClick(time: Long = 300L, onClick: () -> Unit) {
+    setOnClickListener(SafeClickListener(time, onClick))
+}
+
+class SafeClickListener(private val time: Long, private val onClick: () -> Unit) : View.OnClickListener {
+
+    private var clickTime = 0L
+
+    override fun onClick(v: View) {
+        val now = System.currentTimeMillis()
+        if (now - clickTime > time) {
+            clickTime = now
+            onClick()
+        }
+    }
+
+}
+
+/**
  * 初始化标题栏
  * 为了减少这个方法的复杂度，该方法中有的是基础的标题栏设置，如果想要做一些其他的定制，请使用[QMUITopBarWrapper]，
  * 例如[QMUITopBarWrapper.replaceRightText2Image] 方法，可以把右边的文字替换为图片

@@ -1,18 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
 
-  <TextView
-      android:text="设置"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      tools:ignore="MissingConstraints"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
       app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/topbar"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical"
+        >
+
+      <com.theswitchbot.common.widget.ItemViewEvo
+          android:id="@+id/language_pref"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_56"
+          android:layout_marginEnd="@dimen/dp_16"
+          android:layout_marginStart="@dimen/dp_16"
+          android:background="@drawable/shape_corner_up"
+          app:leftIconVisibility="gone"
+          app:dividerVisibility="gone"
+          app:mainTvText="@string/language_settings"
+          app:mainTvTextColor="@color/cc4"
+          app:mainTvTextSize="@dimen/sp_16"
+          app:mainTvTextStyle="bold"
+          app:rightTvMarginEnd="@dimen/dp_4"
+          app:rightTvTextColor="@color/c5"
+          app:rightTvTextSize="@dimen/sp_16"
+          app:rightTvVisibility="visible"
+          />
+
+      <com.theswitchbot.common.widget.ItemViewEvo
+          android:id="@+id/itemPlayVoice"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_56"
+          android:layout_marginEnd="@dimen/dp_16"
+          android:layout_marginStart="@dimen/dp_16"
+          android:layout_marginTop="@dimen/dp_10"
+          android:background="@drawable/card_background"
+          app:layout_constraintTop_toTopOf="parent"
+          app:dividerVisibility="gone"
+          app:endIconVisibility="gone"
+          app:leftIconVisibility="gone"
+          app:mainTvText="@string/set_play_voice"
+          app:mainTvTextColor="@color/cc4"
+          app:mainTvTextSize="@dimen/sp_16"
+          app:mainTvTextStyle="bold"
+          app:rightSwVisibility="visible"
+          />
+      <com.theswitchbot.common.widget.ItemViewEvo
+          android:id="@+id/itemMock"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_56"
+          android:layout_marginEnd="@dimen/dp_16"
+          android:layout_marginStart="@dimen/dp_16"
+          android:layout_marginTop="@dimen/dp_10"
+          android:background="@drawable/card_background"
+          app:layout_constraintTop_toTopOf="parent"
+          app:dividerVisibility="gone"
+          app:endIconVisibility="gone"
+          app:leftIconVisibility="gone"
+          app:mainTvText="@string/set_mock"
+          app:mainTvTextColor="@color/cc4"
+          app:mainTvTextSize="@dimen/sp_16"
+          app:mainTvTextStyle="bold"
+          app:rightSwVisibility="visible"
+          />
+      <com.theswitchbot.common.widget.ItemViewEvo
+          android:id="@+id/itemQuestion"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_56"
+          android:layout_marginEnd="@dimen/dp_16"
+          android:layout_marginStart="@dimen/dp_16"
+          android:layout_marginTop="@dimen/dp_10"
+          android:background="@drawable/card_background"
+          app:dividerVisibility="gone"
+          app:leftIconVisibility="gone"
+          app:mainTvText="@string/set_question"
+          app:mainTvTextColor="@color/cc4"
+          app:mainTvTextSize="@dimen/sp_16"
+          app:mainTvTextStyle="bold"
+          />
+      <com.theswitchbot.common.widget.ItemViewEvo
+          android:id="@+id/itemPrivacy"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_56"
+          android:layout_marginEnd="@dimen/dp_16"
+          android:layout_marginStart="@dimen/dp_16"
+          android:layout_marginTop="@dimen/dp_10"
+          android:background="@drawable/card_background"
+          app:dividerVisibility="gone"
+          app:leftIconVisibility="gone"
+          app:mainTvText="@string/set_privacy"
+          app:mainTvTextColor="@color/cc4"
+          app:mainTvTextSize="@dimen/sp_16"
+          app:mainTvTextStyle="bold"
+          />
+      <com.theswitchbot.common.widget.ItemViewEvo
+          android:id="@+id/itemTalk"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_56"
+          android:layout_marginEnd="@dimen/dp_16"
+          android:layout_marginStart="@dimen/dp_16"
+          android:layout_marginTop="@dimen/dp_10"
+          android:background="@drawable/card_background"
+          app:dividerVisibility="gone"
+          app:leftIconVisibility="gone"
+          app:mainTvText="@string/set_report"
+          app:mainTvTextColor="@color/cc4"
+          app:mainTvTextSize="@dimen/sp_16"
+          app:mainTvTextStyle="bold"
+          />
+      <com.theswitchbot.common.widget.ItemViewEvo
+          android:id="@+id/itemAppVersion"
+          android:layout_marginTop="@dimen/dp_10"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_56"
+          app:mainTvText="@string/app_version"
+          android:layout_marginStart="@dimen/dp_16"
+          app:leftIconVisibility="gone"
+          app:endIconVisibility="gone"
+          app:dividerVisibility="gone"
+          app:rightTvTextSize="@dimen/sp_16"
+          app:rightTvTextColor="@color/c5"
+          app:rightTvMarginEnd="@dimen/dp_16"
+          app:rightTvVisibility="visible"
+          app:mainTvTextColor="@color/cc4"
+          app:mainTvTextStyle="bold"
+          app:mainTvTextSize="@dimen/sp_16"
+          android:layout_marginEnd="@dimen/dp_16"
+          android:background="@drawable/card_background"/>
+
+    </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+  <com.qmuiteam.qmui.widget.QMUITopBarLayout
+      android:id="@+id/topbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/qmui_topbar_height"
+      app:layout_constraintTop_toTopOf="parent"
       />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
