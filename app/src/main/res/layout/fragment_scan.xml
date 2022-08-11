@@ -17,36 +17,61 @@
       app:labelTextLocation="top"
       app:labelTextSize="14sp"
       />
-  <ImageView
-      android:id="@+id/ivFlashlight"
+
+  <TextView
+      android:id="@+id/tvCodeTip"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_gravity="center"
-      android:src="@drawable/zxl_flashlight_selector"
-      android:layout_marginTop="@dimen/zxl_flashlight_margin_top" />
-
-  <TextView
+      android:layout_marginTop="@dimen/dp_140"
       android:text="@string/qr_code_tips1"
-      android:id="@+id/tvCodeTip"
-      android:textColor="@color/a_white"
-      android:layout_gravity="center"
-      android:layout_marginTop="@dimen/dp_150"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"/>
+      android:textColor="@color/white"
+      />
 
   <LinearLayout
+      android:layout_gravity="center"
+      android:layout_marginTop="@dimen/dp_200"
+      android:gravity="center_horizontal"
       android:orientation="horizontal"
       android:layout_width="match_parent"
       android:layout_height="wrap_content">
-     <TextView
-         android:text="@string/action"
-         android:textColor="@color/white_80"
-         android:textSize="12sp"
-         android:drawableTop="@mipmap/icon_light_on"
+     <LinearLayout
+         android:orientation="vertical"
+         android:gravity="center"
          android:layout_width="wrap_content"
-         android:layout_height="wrap_content"/>
+         android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/btnLight"
+           android:src="@drawable/light_selected_selector"
+           android:layout_width="@dimen/dp_30"
+           android:layout_height="@dimen/dp_30"/>
+       <TextView
+           android:text="@string/scan_light"
+           android:textColor="@color/white_80"
+           android:textSize="12sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_marginStart="@dimen/dp_40"
+         android:orientation="vertical"
+         android:gravity="center"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/btnPhoto"
+           android:src="@mipmap/icon_photo"
+           android:layout_width="@dimen/dp_30"
+           android:layout_height="@dimen/dp_30"/>
+       <TextView
+           android:text="@string/scan_image"
+           android:textColor="@color/white_80"
+           android:textSize="12sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+     </LinearLayout>
 
   </LinearLayout>
-
-  <include layout="@layout/toolbar_capture"/>
+<!--  <include layout="@layout/toolbar_capture"/>-->
 </FrameLayout>
