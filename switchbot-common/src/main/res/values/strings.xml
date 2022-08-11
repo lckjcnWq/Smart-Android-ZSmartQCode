@@ -2521,4 +2521,6 @@ Appliances</string>
     <string name="scan_image">扫描图库</string>
     <string name="scan_common_question">常见问题</string>
     <string name="scan_light">手电筒</string>
+    <string name="scan_share">分享</string>
+    <string name="scan_copy">复制</string>
 </resources>

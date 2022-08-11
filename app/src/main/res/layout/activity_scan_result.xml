@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    >
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:background="@color/background"
+      android:fillViewport="true"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/topbar"
+      >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dp_16"
+        tools:context=".wodevice.ipc.add.CameraAdd1ResetFragment"
+        style="@style/ActivityCardStyle"
+        >
+
+
+      <ImageView
+          android:id="@+id/ivScan"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_marginTop="@dimen/dp_25"
+          android:scaleType="fitXY"
+          app:layout_constraintDimensionRatio="H,300:196"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:ignore="MissingConstraints"
+          />
+
+
+      <TextView
+          android:id="@+id/tvScanResult"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:gravity="start"
+          android:padding="2dp"
+          android:textColor="@color/black"
+          android:textSize="@dimen/size_14sp"
+          app:layout_constraintHorizontal_bias="0.513"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/ivScan"
+          tools:ignore="MissingConstraints"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          tools:ignore="MissingConstraints"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/tvScanResult"
+          >
+        <com.kandao.smartqrcode.widget.VerImageRelayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:picHeight="@dimen/dp_40"
+            app:picSrc="@mipmap/ik"
+            app:picWidth="@dimen/dp_40"
+            app:picText="@string/scan_share"
+            />
+        <com.kandao.smartqrcode.widget.VerImageRelayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:picHeight="@dimen/dp_40"
+            app:picSrc="@mipmap/ik"
+            app:picWidth="@dimen/dp_40"
+            app:picText="@string/scan_copy"
+            />
+      </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </ScrollView>
+
+  <com.qmuiteam.qmui.widget.QMUITopBarLayout
+      android:id="@+id/topbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/qmui_topbar_height"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+</androidx.constraintlayout.widget.ConstraintLayout>
