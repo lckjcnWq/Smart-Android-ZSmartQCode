@@ -15,7 +15,7 @@
       android:layout_height="match_parent"
       app:labelText="@string/tips_scan_code"
       app:labelTextLocation="top"
-      app:labelTextSize="14sp"
+      app:labelTextSize="16sp"
       />
 
   <TextView
@@ -24,6 +24,7 @@
       android:layout_height="wrap_content"
       android:layout_gravity="center"
       android:layout_marginTop="@dimen/dp_140"
+      android:textSize="16sp"
       android:text="@string/qr_code_tips1"
       android:textColor="@color/white"
       />

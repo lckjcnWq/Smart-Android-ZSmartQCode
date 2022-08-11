@@ -28,6 +28,21 @@ android {
       proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
     }
   }
+
+  signingConfigs {
+    release {
+      keyAlias 'scan'
+      keyPassword 'wuquan'
+      storeFile file("$projectDir/scan.jks")
+      storePassword 'wuquan'
+    }
+    debug {
+      keyAlias 'scan'
+      keyPassword 'wuquan'
+      storeFile file("$projectDir/scan.jks")
+      storePassword 'wuquan'
+    }
+  }
   compileOptions {
     sourceCompatibility JavaVersion.VERSION_1_8
     targetCompatibility JavaVersion.VERSION_1_8

@@ -70,6 +70,7 @@ dependencies {
     api 'com.github.iielse:switchbutton:1.0.4'
     api 'com.blankj:utilcodex:1.31.0'
     api 'com.github.jenly1314:zxing-lite:2.1.1'
+    api "androidx.browser:browser:1.4.0"
 }
 
 android {

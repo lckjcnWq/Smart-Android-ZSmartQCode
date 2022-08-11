@@ -1,564 +1,577 @@
 <resources>
-    <declare-styleable name="StrengthenEditText">
-        <attr name="leftImageWidth" format="dimension" />
-        <attr name="leftImageHeight" format="dimension" />
-        <attr name="rightImageWidth" format="dimension" />
-        <attr name="rightImageHeight" format="dimension" />
-        <attr name="edittextSize" format="dimension" />
-        <attr name="rightTextSize" format="dimension" />
+  <declare-styleable name="StrengthenEditText">
+    <attr format="dimension" name="leftImageWidth" />
+    <attr format="dimension" name="leftImageHeight" />
+    <attr format="dimension" name="rightImageWidth" />
+    <attr format="dimension" name="rightImageHeight" />
+    <attr format="dimension" name="edittextSize" />
+    <attr format="dimension" name="rightTextSize" />
 
-        <attr name="text" format="string" />
-        <attr name="textHint" format="string" />
-        <attr name="textHintColor" format="color" />
-        <attr name="textColor" format="color" />
-        <attr name="rightTextColor" format="color" />
+    <attr format="string" name="text" />
+    <attr format="string" name="textHint" />
+    <attr format="color" name="textHintColor" />
+    <attr format="color" name="textColor" />
+    <attr format="color" name="rightTextColor" />
 
-        <attr name="rightText" format="string" />
-        <attr name="leftImage" format="reference" />
-        <attr name="rightImage" format="reference" />
+    <attr format="string" name="rightText" />
+    <attr format="reference" name="leftImage" />
+    <attr format="reference" name="rightImage" />
 
-        <attr name="etInputType" format="enum">
-            <enum name="none" value="0x00000000" />
-            <enum name="text" value="0x00000001"/>
-            <enum name="textPassword" value="0x00000081" />
-            <enum name="number" value="0x00000002"/>
-            <enum name="numberDecimal" value="0x00002002"/>
-        </attr>
+    <attr format="enum" name="etInputType">
+      <enum name="none" value="0x00000000" />
+      <enum name="text" value="0x00000001" />
+      <enum name="textPassword" value="0x00000081" />
+      <enum name="number" value="0x00000002" />
+      <enum name="numberDecimal" value="0x00002002" />
+    </attr>
 
-    </declare-styleable>
+  </declare-styleable>
+  <declare-styleable name="CustomPicText">
+    <attr format="dimension" name="picWidth" />
+    <attr format="reference" name="picSrc" />
+    <attr format="dimension" name="picHeight" />
 
-    <declare-styleable name="CircularProgressBar">
-        <attr name="cpb_progress" format="integer" />
-        <attr name="cpb_progressbar_color" format="color" />
-        <attr name="cpb_background_progressbar_color" format="color" />
-        <attr name="cpb_progressbar_width" format="dimension" />
-        <attr name="cpb_background_progressbar_width" format="dimension" />
-    </declare-styleable>
-    <declare-styleable name="ProgressDesView">
-        <attr name="imageIcon" format="reference" />
-        <attr name="imageIconPadding" format="dimension"/>
-    </declare-styleable>
-    <declare-styleable name="SettingView">
-        <attr name="settingTitle" format="reference|string" />
-        <attr name="progressDesRes" format="integer" />
-        <attr name="settingLeftTextView" format="reference|string" />
-        <attr name="settingRightTextView" format="reference|string" />
-        <attr name="settingValue" format="string" />
-        <attr name="isDividerShow" format="boolean" />
-        <attr name="enable" format="boolean" />
-        <attr name="isIconShow" format="boolean" />
-        <attr name="isArrowShow" format="boolean" />
-        <attr name="isTitleTextBold" format="boolean" />
-        <attr name="keyTextColor" format="reference|color" />
-        <attr name="settingIcon" format="reference" />
-        <attr name="contentTextSize" format="dimension|reference" />
-        <attr name="keyTextSize" format="dimension|reference" />
-        <attr name="helpIcon" format="reference" />
-        <attr name="contentColor" format="reference|color" />
-        <attr name="isLeftTextViewShow" format="boolean" />
-        <attr name="isRightTextViewShow" format="boolean" />
-        <attr name="background" format="reference" />
-        <attr name="arrowicon" format="reference" />
-        <attr name="setRightTextViewhint" format="reference|string" />
-        <attr name="arrowClick" format="boolean" />
-    </declare-styleable>
+    <attr format="string" name="picText" />
+    <attr format="color" name="picTextColor" />
+    <attr format="integer" name="picTextSize" />
+  </declare-styleable>
 
-    <declare-styleable name="OverScrollLayout">
-        <attr name="dampingFactor" format="float" />
-        <attr name="dampingDirection">
-            <flag name="left" value="0x0001" />
-            <flag name="top" value="0x0010" />
-            <flag name="right" value="0x0100" />
-            <flag name="bottom" value="0x1000" />
-        </attr>
-    </declare-styleable>
+  <declare-styleable name="CircularProgressBar">
+    <attr format="integer" name="cpb_progress" />
+    <attr format="color" name="cpb_progressbar_color" />
+    <attr format="color" name="cpb_background_progressbar_color" />
+    <attr format="dimension" name="cpb_progressbar_width" />
+    <attr format="dimension" name="cpb_background_progressbar_width" />
+  </declare-styleable>
+  <declare-styleable name="ProgressDesView">
+    <attr format="reference" name="imageIcon" />
+    <attr format="dimension" name="imageIconPadding" />
+  </declare-styleable>
+  <declare-styleable name="SettingView">
+    <attr format="reference|string" name="settingTitle" />
+    <attr format="integer" name="progressDesRes" />
+    <attr format="reference|string" name="settingLeftTextView" />
+    <attr format="reference|string" name="settingRightTextView" />
+    <attr format="string" name="settingValue" />
+    <attr format="boolean" name="isDividerShow" />
+    <attr format="boolean" name="enable" />
+    <attr format="boolean" name="isIconShow" />
+    <attr format="boolean" name="isArrowShow" />
+    <attr format="boolean" name="isTitleTextBold" />
+    <attr format="reference|color" name="keyTextColor" />
+    <attr format="reference" name="settingIcon" />
+    <attr format="dimension|reference" name="contentTextSize" />
+    <attr format="dimension|reference" name="keyTextSize" />
+    <attr format="reference" name="helpIcon" />
+    <attr format="reference|color" name="contentColor" />
+    <attr format="boolean" name="isLeftTextViewShow" />
+    <attr format="boolean" name="isRightTextViewShow" />
+    <attr format="reference" name="background" />
+    <attr format="reference" name="arrowicon" />
+    <attr format="reference|string" name="setRightTextViewhint" />
+    <attr format="boolean" name="arrowClick" />
+  </declare-styleable>
 
-    <declare-styleable name="CircularProgressButton">
-        <attr name="spinning_bar_width" format="dimension"/>
-        <attr name="spinning_bar_color" format="color"/>
-        <attr name="spinning_bar_padding" format="dimension"/>
-        <attr name="initialCornerAngle" format="dimension"/>
-        <attr name="finalCornerAngle" format="dimension"/>
-    </declare-styleable>
+  <declare-styleable name="OverScrollLayout">
+    <attr format="float" name="dampingFactor" />
+    <attr name="dampingDirection">
+      <flag name="left" value="0x0001" />
+      <flag name="top" value="0x0010" />
+      <flag name="right" value="0x0100" />
+      <flag name="bottom" value="0x1000" />
+    </attr>
+  </declare-styleable>
 
-    <declare-styleable name="TagGroup">
-        <!-- Whether the tag group is in append mode. -->
-        <attr name="atg_isAppendMode" format="boolean" />
-        <!-- If the tag group is in append mode, what the hint of input tag. -->
-        <attr name="atg_inputHint" format="string" />
+  <declare-styleable name="CircularProgressButton">
+    <attr format="dimension" name="spinning_bar_width" />
+    <attr format="color" name="spinning_bar_color" />
+    <attr format="dimension" name="spinning_bar_padding" />
+    <attr format="dimension" name="initialCornerAngle" />
+    <attr format="dimension" name="finalCornerAngle" />
+  </declare-styleable>
 
-        <!-- The tag view outline border color. -->
-        <attr name="atg_borderColor" format="color" />
-        <!-- The tag view text color. -->
-        <attr name="atg_textColor" format="color" />
-        <!-- The tag view background color. -->
-        <attr name="atg_backgroundColor" format="color" />
+  <declare-styleable name="TagGroup">
+    <!-- Whether the tag group is in append mode. -->
+    <attr format="boolean" name="atg_isAppendMode" />
+    <!-- If the tag group is in append mode, what the hint of input tag. -->
+    <attr format="string" name="atg_inputHint" />
 
-        <!-- The dash outline border color, when in append mode. -->
-        <attr name="atg_dashBorderColor" format="color" />
-        <!-- The input tag hint text color, when in append mode. -->
-        <attr name="atg_inputHintColor" format="color" />
-        <!-- The input tag type text color, when in append mode. -->
-        <attr name="atg_inputTextColor" format="color" />
+    <!-- The tag view outline border color. -->
+    <attr format="color" name="atg_borderColor" />
+    <!-- The tag view text color. -->
+    <attr format="color" name="atg_textColor" />
+    <!-- The tag view background color. -->
+    <attr format="color" name="atg_backgroundColor" />
 
-        <!-- The checked tag view outline border color. -->
-        <attr name="atg_checkedBorderColor" format="color" />
-        <!-- The checked text color. -->
-        <attr name="atg_checkedTextColor" format="color" />
-        <!-- The checked marker color. -->
-        <attr name="atg_checkedMarkerColor" format="color" />
-        <!-- The checked tag view background color. -->
-        <attr name="atg_checkedBackgroundColor" format="color" />
+    <!-- The dash outline border color, when in append mode. -->
+    <attr format="color" name="atg_dashBorderColor" />
+    <!-- The input tag hint text color, when in append mode. -->
+    <attr format="color" name="atg_inputHintColor" />
+    <!-- The input tag type text color, when in append mode. -->
+    <attr format="color" name="atg_inputTextColor" />
 
-        <!-- The tag view background color, when the tag view is being pressed. -->
-        <attr name="atg_pressedBackgroundColor" format="color" />
+    <!-- The checked tag view outline border color. -->
+    <attr format="color" name="atg_checkedBorderColor" />
+    <!-- The checked text color. -->
+    <attr format="color" name="atg_checkedTextColor" />
+    <!-- The checked marker color. -->
+    <attr format="color" name="atg_checkedMarkerColor" />
+    <!-- The checked tag view background color. -->
+    <attr format="color" name="atg_checkedBackgroundColor" />
 
-        <!-- The tag view outline border stroke width. -->
-        <attr name="atg_borderStrokeWidth" format="dimension" />
-        <!-- The tag view text size. -->
-        <attr name="atg_textSize" format="dimension" />
+    <!-- The tag view background color, when the tag view is being pressed. -->
+    <attr format="color" name="atg_pressedBackgroundColor" />
 
-        <attr name="atg_horizontalSpacing" format="dimension" />
-        <attr name="atg_verticalSpacing" format="dimension" />
-        <attr name="atg_horizontalPadding" format="dimension" />
-        <attr name="atg_verticalPadding" format="dimension" />
-    </declare-styleable>
-    <declare-styleable name="Themes">
-        <attr name="tagGroupStyle" format="reference" />
-    </declare-styleable>
+    <!-- The tag view outline border stroke width. -->
+    <attr format="dimension" name="atg_borderStrokeWidth" />
+    <!-- The tag view text size. -->
+    <attr format="dimension" name="atg_textSize" />
 
-    <declare-styleable name="RangeSeekBar">
-        <!--RangeSeekBar common attrs-->
+    <attr format="dimension" name="atg_horizontalSpacing" />
+    <attr format="dimension" name="atg_verticalSpacing" />
+    <attr format="dimension" name="atg_horizontalPadding" />
+    <attr format="dimension" name="atg_verticalPadding" />
+  </declare-styleable>
+  <declare-styleable name="Themes">
+    <attr format="reference" name="tagGroupStyle" />
+  </declare-styleable>
 
-        <attr name="leftThumbDrawable" format="reference"/>
-        <attr name="rightThumbDrawable" format="reference"/>
-        <attr name="leftThumbDisableDrawable" format="reference"/>
-        <attr name="rightThumbDisableDrawable" format="reference"/>
+  <declare-styleable name="RangeSeekBar">
+    <!--RangeSeekBar common attrs-->
 
-        <!--The maximum-->
-        <attr name="rsb_max" format="float"/>
+    <attr format="reference" name="leftThumbDrawable" />
+    <attr format="reference" name="rightThumbDrawable" />
+    <attr format="reference" name="leftThumbDisableDrawable" />
+    <attr format="reference" name="rightThumbDisableDrawable" />
 
-        <!--The minimum-->
-        <attr name="rsb_min" format="float"/>
+    <!--The maximum-->
+    <attr format="float" name="rsb_max" />
 
-        <!--RangeSeekBar phoneMode, single is normal seekBar, range is RangeSeekBar-->
-        <attr name="rsb_mode" format="enum">
-            <enum name="single" value="1"/>
-            <enum name="range" value="2"/>
-        </attr>
+    <!--The minimum-->
+    <attr format="float" name="rsb_min" />
 
-        <!--The min interval of the thumbs -->
-        <attr name="rsb_range_interval" format="float"/>
+    <!--RangeSeekBar phoneMode, single is normal seekBar, range is RangeSeekBar-->
+    <attr format="enum" name="rsb_mode">
+      <enum name="single" value="1" />
+      <enum name="range" value="2" />
+    </attr>
 
-        <!-- 0 for the normal phoneMode, greater than 1 to switch to scale phoneMode-->
-        <attr name="rsb_tick_mark_number" format="integer"/>
+    <!--The min interval of the thumbs -->
+    <attr format="float" name="rsb_range_interval" />
 
-        <!--Scale phoneMode
-        Number according to the scale of the actual proportion of the distribution of the location (markTextArray must be a number)
-        Other bisects the current layout (markTextArray can be any character)
-        -->
-        <attr name="rsb_tick_mark_mode" format="enum">
-            <enum name="number" value="0"/>
-            <enum name="other" value="1"/>
-        </attr>
+    <!-- 0 for the normal phoneMode, greater than 1 to switch to scale phoneMode-->
+    <attr format="integer" name="rsb_tick_mark_number" />
 
-        <!--The tick mark text gravity -->
-        <attr name="rsb_tick_mark_gravity" format="enum">
-            <enum name="left" value="0"/>
-            <enum name="center" value="1"/>
-            <enum name="right" value="2"/>
-        </attr>
+    <!--Scale phoneMode
+    Number according to the scale of the actual proportion of the distribution of the location (markTextArray must be a number)
+    Other bisects the current layout (markTextArray can be any character)
+    -->
+    <attr format="enum" name="rsb_tick_mark_mode">
+      <enum name="number" value="0" />
+      <enum name="other" value="1" />
+    </attr>
 
-        <!--The tick mark text array -->
-        <attr name="rsb_tick_mark_text_array" format="reference"/>
+    <!--The tick mark text gravity -->
+    <attr format="enum" name="rsb_tick_mark_gravity">
+      <enum name="left" value="0" />
+      <enum name="center" value="1" />
+      <enum name="right" value="2" />
+    </attr>
 
-        <!--The tick mark text margin bottom to progress -->
-        <attr name="rsb_tick_mark_text_margin" format="dimension"/>
+    <!--The tick mark text array -->
+    <attr format="reference" name="rsb_tick_mark_text_array" />
 
-        <attr name="rsb_tick_mark_text_size" format="dimension"/>
+    <!--The tick mark text margin bottom to progress -->
+    <attr format="dimension" name="rsb_tick_mark_text_margin" />
 
-        <attr name="rsb_tick_mark_text_color" format="color"/>
+    <attr format="dimension" name="rsb_tick_mark_text_size" />
 
-        <!--it just work in range && number phoneMode now-->
-        <attr name="rsb_tick_mark_in_range_text_color" format="color"/>
+    <attr format="color" name="rsb_tick_mark_text_color" />
 
-        <attr name="rsb_progress_height" format="dimension"/>
+    <!--it just work in range && number phoneMode now-->
+    <attr format="color" name="rsb_tick_mark_in_range_text_color" />
 
-        <attr name="rsb_progress_radius" format="dimension"/>
+    <attr format="dimension" name="rsb_progress_height" />
 
-        <!--the color of progress bar when in progress-->
-        <attr name="rsb_progress_color" format="color"/>
+    <attr format="dimension" name="rsb_progress_radius" />
 
-        <attr name="rsb_disable_color" format="color"/>
+    <!--the color of progress bar when in progress-->
+    <attr format="color" name="rsb_progress_color" />
 
-        <!--the default color of the progress bar-->
-        <attr name="rsb_progress_default_color" format="color"/>
+    <attr format="color" name="rsb_disable_color" />
 
-        <!--the vertical RangeSeekBar draw orientation-->
-        <attr name="rsb_orientation" format="enum">
-            <enum name="left" value="-1"/>
-            <enum name="right" value="1"/>
-        </attr>
+    <!--the default color of the progress bar-->
+    <attr format="color" name="rsb_progress_default_color" />
 
-        <!--SeekBar attrs-->
-        <attr name="rsb_indicator_show_mode" format="enum">
-            <enum name="showWhenTouch" value="0"/>
-            <enum name="alwaysHide" value="1"/>
-            <enum name="alwaysShowAfterTouch" value="2"/>
-            <enum name="alwaysShow" value="3"/>
-        </attr>
-        <attr name="rsb_indicator_height" format="dimension"/>
-        <attr name="rsb_indicator_width" format="dimension"/>
-        <!--indicator margin bottom to progress bar-->
-        <attr name="rsb_indicator_margin" format="dimension"/>
-        <attr name="rsb_indicator_text_size" format="dimension"/>
-        <attr name="rsb_indicator_text_color" format="color"/>
-        <!--indicator arrow size, it just work when you not use rsb_indicator_drawable -->
-        <attr name="rsb_indicator_arrow_size" format="dimension"/>
-        <!-- must use 9 path ！！！-->
-        <attr name="rsb_indicator_drawable" format="reference"/>
-        <attr name="rsb_indicator_background_color" format="color"/>
-        <attr name="rsb_indicator_padding_left" format="dimension"/>
-        <attr name="rsb_indicator_padding_right" format="dimension"/>
-        <attr name="rsb_indicator_padding_top" format="dimension"/>
-        <attr name="rsb_indicator_padding_bottom" format="dimension"/>
-        <attr name="rsb_indicator_radius" format="dimension"/>
-        <attr name="rsb_thumb_drawable" format="reference"/>
-        <!--the thumb inactivated is when you don't touch the thumb button-->
-        <attr name="rsb_thumb_inactivated_drawable" format="reference"/>
-        <attr name="rsb_thumb_size" format="dimension"/>
-        <attr name="rsb_thumb_height" format="dimension"/>
-        <attr name="rsb_thumb_scale_ratio" format="float"/>
-    </declare-styleable>
-    <declare-styleable name="WheelPicker">
-        <attr name="wheel_data" format="reference"/>
-        <attr name="wheel_selected_item_position" format="integer"/>
-        <attr name="wheel_item_text_size" format="dimension"/>
-        <attr name="wheel_item_text_color" format="color"/>
-        <attr name="wheel_selected_item_text_color" format="color"/>
-        <attr name="wheel_same_width" format="boolean"/>
-        <attr name="wheel_maximum_width_text" format="string"/>
-        <attr name="wheel_maximum_width_text_position" format="integer"/>
-        <attr name="wheel_visible_item_count" format="integer"/>
-        <attr name="wheel_item_space" format="dimension"/>
-        <attr name="wheel_cyclic" format="boolean"/>
-        <attr name="wheel_indicator" format="boolean"/>
-        <attr name="wheel_indicator_color" format="color"/>
-        <attr name="wheel_indicator_size" format="dimension"/>
-        <attr name="wheel_curtain" format="boolean"/>
-        <attr name="wheel_curtain_color" format="color"/>
-        <attr name="wheel_atmospheric" format="boolean"/>
-        <attr name="wheel_curved" format="boolean"/>
-        <attr name="wheel_item_align_wo" format="enum">
-            <enum name="center" value="0"/>
-            <enum name="left" value="1"/>
-            <enum name="right" value="2"/>
-        </attr>
-        <attr name="wheel_font_path" format="string"/>
-    </declare-styleable>
+    <!--the vertical RangeSeekBar draw orientation-->
+    <attr format="enum" name="rsb_orientation">
+      <enum name="left" value="-1" />
+      <enum name="right" value="1" />
+    </attr>
+
+    <!--SeekBar attrs-->
+    <attr format="enum" name="rsb_indicator_show_mode">
+      <enum name="showWhenTouch" value="0" />
+      <enum name="alwaysHide" value="1" />
+      <enum name="alwaysShowAfterTouch" value="2" />
+      <enum name="alwaysShow" value="3" />
+    </attr>
+    <attr format="dimension" name="rsb_indicator_height" />
+    <attr format="dimension" name="rsb_indicator_width" />
+    <!--indicator margin bottom to progress bar-->
+    <attr format="dimension" name="rsb_indicator_margin" />
+    <attr format="dimension" name="rsb_indicator_text_size" />
+    <attr format="color" name="rsb_indicator_text_color" />
+    <!--indicator arrow size, it just work when you not use rsb_indicator_drawable -->
+    <attr format="dimension" name="rsb_indicator_arrow_size" />
+    <!-- must use 9 path ！！！-->
+    <attr format="reference" name="rsb_indicator_drawable" />
+    <attr format="color" name="rsb_indicator_background_color" />
+    <attr format="dimension" name="rsb_indicator_padding_left" />
+    <attr format="dimension" name="rsb_indicator_padding_right" />
+    <attr format="dimension" name="rsb_indicator_padding_top" />
+    <attr format="dimension" name="rsb_indicator_padding_bottom" />
+    <attr format="dimension" name="rsb_indicator_radius" />
+    <attr format="reference" name="rsb_thumb_drawable" />
+    <!--the thumb inactivated is when you don't touch the thumb button-->
+    <attr format="reference" name="rsb_thumb_inactivated_drawable" />
+    <attr format="dimension" name="rsb_thumb_size" />
+    <attr format="dimension" name="rsb_thumb_height" />
+    <attr format="float" name="rsb_thumb_scale_ratio" />
+  </declare-styleable>
+  <declare-styleable name="WheelPicker">
+    <attr format="reference" name="wheel_data" />
+    <attr format="integer" name="wheel_selected_item_position" />
+    <attr format="dimension" name="wheel_item_text_size" />
+    <attr format="color" name="wheel_item_text_color" />
+    <attr format="color" name="wheel_selected_item_text_color" />
+    <attr format="boolean" name="wheel_same_width" />
+    <attr format="string" name="wheel_maximum_width_text" />
+    <attr format="integer" name="wheel_maximum_width_text_position" />
+    <attr format="integer" name="wheel_visible_item_count" />
+    <attr format="dimension" name="wheel_item_space" />
+    <attr format="boolean" name="wheel_cyclic" />
+    <attr format="boolean" name="wheel_indicator" />
+    <attr format="color" name="wheel_indicator_color" />
+    <attr format="dimension" name="wheel_indicator_size" />
+    <attr format="boolean" name="wheel_curtain" />
+    <attr format="color" name="wheel_curtain_color" />
+    <attr format="boolean" name="wheel_atmospheric" />
+    <attr format="boolean" name="wheel_curved" />
+    <attr format="enum" name="wheel_item_align_wo">
+      <enum name="center" value="0" />
+      <enum name="left" value="1" />
+      <enum name="right" value="2" />
+    </attr>
+    <attr format="string" name="wheel_font_path" />
+  </declare-styleable>
 
 
-    <declare-styleable name="StepsView">
-        <attr name="numOfSteps" format="integer" />
-        <attr name="completePosition" format="integer" />
-        <attr name="labels" format="reference" />
-        <attr name="viewBarColor" format="reference" />
-        <attr name="stepsViewProgressColor" format="reference" />
-        <attr name="labelColor" format="reference" />
-        <attr name="progressTextColor" format="reference" />
-        <attr name="hideProgressText" format="boolean" />
-        <attr name="labelSize" format="float" />
-        <attr name="progressMargin" format="float" />
-        <attr name="stepCircleRadius" format="float" />
-        <attr name="progressStrokeWidth" format="float" />
-    </declare-styleable>
+  <declare-styleable name="StepsView">
+    <attr format="integer" name="numOfSteps" />
+    <attr format="integer" name="completePosition" />
+    <attr format="reference" name="labels" />
+    <attr format="reference" name="viewBarColor" />
+    <attr format="reference" name="stepsViewProgressColor" />
+    <attr format="reference" name="labelColor" />
+    <attr format="reference" name="progressTextColor" />
+    <attr format="boolean" name="hideProgressText" />
+    <attr format="float" name="labelSize" />
+    <attr format="float" name="progressMargin" />
+    <attr format="float" name="stepCircleRadius" />
+    <attr format="float" name="progressStrokeWidth" />
+  </declare-styleable>
 
-    <declare-styleable name="ColorPickItemView">
-        <attr name="src" format="integer" />
-        <attr name="background_color" format="color" />
-        <attr name="border_color" format="color" />
-        <attr name="border_width" format="dimension" />
-    </declare-styleable>
+  <declare-styleable name="ColorPickItemView">
+    <attr format="integer" name="src" />
+    <attr format="color" name="background_color" />
+    <attr format="color" name="border_color" />
+    <attr format="dimension" name="border_width" />
+  </declare-styleable>
 
-    <declare-styleable name="MaterialNumberPicker">
-        <attr name="npMinValue" format="integer" />
-        <attr name="npMaxValue" format="integer" />
-        <attr name="npDefaultValue" format="integer" />
-        <attr name="npTextSize" format="dimension" />
-        <attr name="npTextColor" format="color" />
-        <attr name="npSeparatorColor" format="color" />
-        <attr name="npBackgroundColor" format="color" />
-        <attr name="npFocusValue" format="boolean" />
-        <attr name="npWrapValue" format="boolean" />
-    </declare-styleable>
+  <declare-styleable name="MaterialNumberPicker">
+    <attr format="integer" name="npMinValue" />
+    <attr format="integer" name="npMaxValue" />
+    <attr format="integer" name="npDefaultValue" />
+    <attr format="dimension" name="npTextSize" />
+    <attr format="color" name="npTextColor" />
+    <attr format="color" name="npSeparatorColor" />
+    <attr format="color" name="npBackgroundColor" />
+    <attr format="boolean" name="npFocusValue" />
+    <attr format="boolean" name="npWrapValue" />
+  </declare-styleable>
 
-    <declare-styleable name="MyBGABanner">
-        <!-- 指示点容器背景 -->
-        <attr name="mybanner_pointContainerBackground" format="reference|color" />
-        <!-- 指示点背景 -->
-        <attr name="mybanner_pointDrawable" format="reference" />
-        <!-- 指示点容器左右内间距 -->
-        <attr name="mybanner_pointContainerLeftRightPadding" format="dimension" />
-        <!-- 指示点上下外间距 -->
-        <attr name="mybanner_pointTopBottomMargin" format="dimension" />
-        <!-- 指示点左右外间距 -->
-        <attr name="mybanner_pointLeftRightMargin" format="dimension" />
-        <!-- 指示器的位置 -->
-        <attr name="mybanner_indicatorGravity">
-            <flag name="top" value="0x30" />
-            <flag name="bottom" value="0x50" />
-            <flag name="left" value="0x03" />
-            <flag name="right" value="0x05" />
-            <flag name="center_horizontal" value="0x01" />
-        </attr>
-        <!-- 是否开启自动轮播 -->
-        <attr name="mybanner_pointAutoPlayAble" format="boolean" />
-        <!-- 自动轮播的时间间隔 -->
-        <attr name="mybanner_pointAutoPlayInterval" format="integer" />
-        <!-- 页码切换过程的时间长度 -->
-        <attr name="mybanner_pageChangeDuration" format="integer" />
-        <!-- 页面切换的动画效果 -->
-        <attr name="mybanner_transitionEffect" format="enum">
-            <enum name="defaultEffect" value="0" />
-            <enum name="alpha" value="1" />
-            <enum name="rotate" value="2" />
-            <enum name="cube" value="3" />
-            <enum name="flip" value="4" />
-            <enum name="accordion" value="5" />
-            <enum name="zoomFade" value="6" />
-            <enum name="fade" value="7" />
-            <enum name="zoomCenter" value="8" />
-            <enum name="zoomStack" value="9" />
-            <enum name="stack" value="10" />
-            <enum name="depth" value="11" />
-            <enum name="zoom" value="12" />
-        </attr>
-        <!-- 提示文案的文字颜色 -->
-        <attr name="mybanner_tipTextColor" format="reference|color" />
-        <!-- 提示文案的文字大小 -->
-        <attr name="mybanner_tipTextSize" format="dimension" />
-        <!-- 加载网络数据时覆盖在 BGABanner 最上层的占位图 -->
-        <attr name="mybanner_placeholderDrawable" format="reference" />
-        <!-- 是否是数字指示器 -->
-        <attr name="mybanner_isNumberIndicator" format="boolean" />
-        <!-- 数字指示器文字颜色 -->
-        <attr name="mybanner_numberIndicatorTextColor" format="reference|color" />
-        <!-- 数字指示器文字大小 -->
-        <attr name="mybanner_numberIndicatorTextSize" format="dimension" />
-        <!-- 数字指示器背景 -->
-        <attr name="mybanner_numberIndicatorBackground" format="reference" />
-        <!-- 当只有一页数据时是否显示指示器，默认值为 false -->
-        <attr name="mybanner_isNeedShowIndicatorOnOnlyOnePage" format="boolean" />
-        <!-- 自动轮播区域距离 BGABanner 底部的距离 -->
-        <attr name="mybanner_contentBottomMargin" format="dimension" />
-        <!-- 宽高比例，如果大于 0，则会根据宽度来计算高度，否则使用 android:layout_height 指定的高度 -->
-        <attr name="mybanner_aspectRatio" format="float" />
-        <!-- 占位图和资源图片缩放模式 -->
-        <attr name="android:scaleType" />
-        <attr name="contentPaddingTop" format="dimension" />
-        <attr name="contentPaddingBottom" format="dimension" />
-        <attr name="contentPaddingLeft" format="dimension" />
-        <attr name="contentPaddingRight" format="dimension" />
-    </declare-styleable>
+  <declare-styleable name="MyBGABanner">
+    <!-- 指示点容器背景 -->
+    <attr format="reference|color" name="mybanner_pointContainerBackground" />
+    <!-- 指示点背景 -->
+    <attr format="reference" name="mybanner_pointDrawable" />
+    <!-- 指示点容器左右内间距 -->
+    <attr format="dimension" name="mybanner_pointContainerLeftRightPadding" />
+    <!-- 指示点上下外间距 -->
+    <attr format="dimension" name="mybanner_pointTopBottomMargin" />
+    <!-- 指示点左右外间距 -->
+    <attr format="dimension" name="mybanner_pointLeftRightMargin" />
+    <!-- 指示器的位置 -->
+    <attr name="mybanner_indicatorGravity">
+      <flag name="top" value="0x30" />
+      <flag name="bottom" value="0x50" />
+      <flag name="left" value="0x03" />
+      <flag name="right" value="0x05" />
+      <flag name="center_horizontal" value="0x01" />
+    </attr>
+    <!-- 是否开启自动轮播 -->
+    <attr format="boolean" name="mybanner_pointAutoPlayAble" />
+    <!-- 自动轮播的时间间隔 -->
+    <attr format="integer" name="mybanner_pointAutoPlayInterval" />
+    <!-- 页码切换过程的时间长度 -->
+    <attr format="integer" name="mybanner_pageChangeDuration" />
+    <!-- 页面切换的动画效果 -->
+    <attr format="enum" name="mybanner_transitionEffect">
+      <enum name="defaultEffect" value="0" />
+      <enum name="alpha" value="1" />
+      <enum name="rotate" value="2" />
+      <enum name="cube" value="3" />
+      <enum name="flip" value="4" />
+      <enum name="accordion" value="5" />
+      <enum name="zoomFade" value="6" />
+      <enum name="fade" value="7" />
+      <enum name="zoomCenter" value="8" />
+      <enum name="zoomStack" value="9" />
+      <enum name="stack" value="10" />
+      <enum name="depth" value="11" />
+      <enum name="zoom" value="12" />
+    </attr>
+    <!-- 提示文案的文字颜色 -->
+    <attr format="reference|color" name="mybanner_tipTextColor" />
+    <!-- 提示文案的文字大小 -->
+    <attr format="dimension" name="mybanner_tipTextSize" />
+    <!-- 加载网络数据时覆盖在 BGABanner 最上层的占位图 -->
+    <attr format="reference" name="mybanner_placeholderDrawable" />
+    <!-- 是否是数字指示器 -->
+    <attr format="boolean" name="mybanner_isNumberIndicator" />
+    <!-- 数字指示器文字颜色 -->
+    <attr format="reference|color" name="mybanner_numberIndicatorTextColor" />
+    <!-- 数字指示器文字大小 -->
+    <attr format="dimension" name="mybanner_numberIndicatorTextSize" />
+    <!-- 数字指示器背景 -->
+    <attr format="reference" name="mybanner_numberIndicatorBackground" />
+    <!-- 当只有一页数据时是否显示指示器，默认值为 false -->
+    <attr format="boolean" name="mybanner_isNeedShowIndicatorOnOnlyOnePage" />
+    <!-- 自动轮播区域距离 BGABanner 底部的距离 -->
+    <attr format="dimension" name="mybanner_contentBottomMargin" />
+    <!-- 宽高比例，如果大于 0，则会根据宽度来计算高度，否则使用 android:layout_height 指定的高度 -->
+    <attr format="float" name="mybanner_aspectRatio" />
+    <!-- 占位图和资源图片缩放模式 -->
+    <attr name="android:scaleType" />
+    <attr format="dimension" name="contentPaddingTop" />
+    <attr format="dimension" name="contentPaddingBottom" />
+    <attr format="dimension" name="contentPaddingLeft" />
+    <attr format="dimension" name="contentPaddingRight" />
+  </declare-styleable>
 
-    <declare-styleable name="waveSideBar">
-        <attr name="wsTextColor" format="color|reference" />
-        <attr name="backgroundColor" format="color|reference" />
-        <attr name="chooseTextColor" format="color|reference" />
-        <attr name="textSize" format="dimension" />
-        <attr name="hintTextSize" format="dimension" />
-        <attr name="radius" format="dimension" />
-        <attr name="circleRadius" format="dimension" />
-    </declare-styleable>
-    <declare-styleable name="AlignTextView">
-        <attr name="alignOnlyOneLine" format="boolean" />
-        <attr format="enum" name="align"><enum name="left" value="0"/><enum name="center" value="1"/><enum name="right" value="2"/></attr>
+  <declare-styleable name="waveSideBar">
+    <attr format="color|reference" name="wsTextColor" />
+    <attr format="color|reference" name="backgroundColor" />
+    <attr format="color|reference" name="chooseTextColor" />
+    <attr format="dimension" name="textSize" />
+    <attr format="dimension" name="hintTextSize" />
+    <attr format="dimension" name="radius" />
+    <attr format="dimension" name="circleRadius" />
+  </declare-styleable>
+  <declare-styleable name="AlignTextView">
+    <attr format="boolean" name="alignOnlyOneLine" />
+    <attr format="enum" name="align">
+      <enum name="left" value="0" />
+      <enum name="center" value="1" />
+      <enum name="right" value="2" />
+    </attr>
 
-    </declare-styleable>
-    <declare-styleable name="BulbLightProcessView">
-        <attr name="civ_border_width_line" format="dimension" />
-        <attr name="civ_border_color_line" format="color" />
-        <attr name="civ_border_overlay" format="boolean" />
-        <attr name="civ_fill_color" format="color" />
-    </declare-styleable>
+  </declare-styleable>
+  <declare-styleable name="BulbLightProcessView">
+    <attr format="dimension" name="civ_border_width_line" />
+    <attr format="color" name="civ_border_color_line" />
+    <attr format="boolean" name="civ_border_overlay" />
+    <attr format="color" name="civ_fill_color" />
+  </declare-styleable>
 
-    <declare-styleable name="AllColorBarView">
-        <!-- 设置滑块图标-->
-        <attr name="colorThumbDrawable" format="reference" />
-        <!-- 设置彩色长条高度-->
-        <attr name="colorBarHeight" format="dimension" />
-        <!-- 设置滑块图标高度，宽度会根据高度等比适应-->
-        <attr name="colorThumbHeight" format="dimension" />
-    </declare-styleable>
+  <declare-styleable name="AllColorBarView">
+    <!-- 设置滑块图标-->
+    <attr format="reference" name="colorThumbDrawable" />
+    <!-- 设置彩色长条高度-->
+    <attr format="dimension" name="colorBarHeight" />
+    <!-- 设置滑块图标高度，宽度会根据高度等比适应-->
+    <attr format="dimension" name="colorThumbHeight" />
+  </declare-styleable>
 
-    <declare-styleable name="BulbDelayView">
-        <!--颜色-->
-        <attr name="ringColor" format="color" />
-        <!-- 进度文本的字体大小 -->
-        <attr name="progressTextSize" format="dimension" />
-        <!-- 圆环宽度 -->
-        <attr name="ringWidth" format="float" />
-        <!--进度文本颜色-->
-        <attr name="delayTextColor" format="color"/>
-        <!--倒计时-->
-        <attr name="countdownTime" format="integer"/>
-    </declare-styleable>
+  <declare-styleable name="BulbDelayView">
+    <!--颜色-->
+    <attr format="color" name="ringColor" />
+    <!-- 进度文本的字体大小 -->
+    <attr format="dimension" name="progressTextSize" />
+    <!-- 圆环宽度 -->
+    <attr format="float" name="ringWidth" />
+    <!--进度文本颜色-->
+    <attr format="color" name="delayTextColor" />
+    <!--倒计时-->
+    <attr format="integer" name="countdownTime" />
+  </declare-styleable>
 
-    <declare-styleable name="ItemViewEvo">
-        <!--        分割线-->
-        <attr name="dividerHigh" format="dimension"/>
-        <attr name="dividerColor" format="color"/>
-        <attr name="dividerMarginStart" format="dimension"/>
-        <attr name="dividerMarginEnd" format="dimension"/>
-        <attr name="dividerVisibility">
-            <enum name="visible" value="0" />
-            <enum name="invisible" value="4" />
-            <enum name="gone" value="8" />
-        </attr>
-        <attr name="dividerPosition">
-            <enum name="top" value="0" />
-            <enum name="bottom" value="1" />
-        </attr>
+  <declare-styleable name="ItemViewEvo">
+    <!--        分割线-->
+    <attr format="dimension" name="dividerHigh" />
+    <attr format="color" name="dividerColor" />
+    <attr format="dimension" name="dividerMarginStart" />
+    <attr format="dimension" name="dividerMarginEnd" />
+    <attr name="dividerVisibility">
+      <enum name="visible" value="0" />
+      <enum name="invisible" value="4" />
+      <enum name="gone" value="8" />
+    </attr>
+    <attr name="dividerPosition">
+      <enum name="top" value="0" />
+      <enum name="bottom" value="1" />
+    </attr>
 
-        <!--        mainTv左侧图标-->
-        <attr name="leftIconSrc" format="reference"/>
-        <attr name="leftIconVisibility">
-            <enum name="visible" value="0" />
-            <enum name="invisible" value="4" />
-            <enum name="gone" value="8" />
-        </attr>
+    <!--        mainTv左侧图标-->
+    <attr format="reference" name="leftIconSrc" />
+    <attr name="leftIconVisibility">
+      <enum name="visible" value="0" />
+      <enum name="invisible" value="4" />
+      <enum name="gone" value="8" />
+    </attr>
 
-        <attr name="leftIconWith" format="dimension">
-            <enum name="fill_parent" value="-1" />
-            <enum name="match_parent" value="-1" />
-            <enum name="wrap_content" value="-2" />
-        </attr>
-        <attr name="leftIconHigh" format="dimension">
-            <enum name="fill_parent" value="-1" />
-            <enum name="match_parent" value="-1" />
-            <enum name="wrap_content" value="-2" />
-        </attr>
-        <attr name="leftIconMarginStart" format="dimension"/>
-        <attr name="leftIconMarginEnd" format="dimension"/>
-        <attr name="leftIconScaleType">
-            <enum name="matrix" value="0" />
-            <enum name="fitXY" value="1" />
-            <enum name="fitStart" value="2" />
-            <enum name="fitCenter" value="3" />
-            <enum name="fitEnd" value="4" />
-            <enum name="center" value="5" />
-            <enum name="centerCrop" value="6" />
-            <enum name="centerInside" value="7" />
-        </attr>
-        <!--        mainTV右侧图标-->
-        <attr name="rightIconSrc" format="reference"/>
-        <attr name="rightIconVisibility">
-            <enum name="visible" value="0" />
-            <enum name="invisible" value="4" />
-            <enum name="gone" value="8" />
-        </attr>
-        <attr name="rightIconWith" format="dimension">
-            <enum name="fill_parent" value="-1" />
-            <enum name="match_parent" value="-1" />
-            <enum name="wrap_content" value="-2" />
-        </attr>
-        <attr name="rightIconHigh" format="dimension">
-            <enum name="fill_parent" value="-1" />
-            <enum name="match_parent" value="-1" />
-            <enum name="wrap_content" value="-2" />
-        </attr>
-        <attr name="rightIconMarginStart" format="dimension"/>
-        <attr name="rightIconMarginEnd" format="dimension"/>
-        <attr name="rightIconScaleType">
-            <enum name="matrix" value="0" />
-            <enum name="fitXY" value="1" />
-            <enum name="fitStart" value="2" />
-            <enum name="fitCenter" value="3" />
-            <enum name="fitEnd" value="4" />
-            <enum name="center" value="5" />
-            <enum name="centerCrop" value="6" />
-            <enum name="centerInside" value="7" />
-        </attr>
-        <!--        view尾部图标-->
-        <attr name="endIconSrc" format="reference"/>
-        <attr name="endIconVisibility">
-            <enum name="visible" value="0" />
-            <enum name="invisible" value="4" />
-            <enum name="gone" value="8" />
-        </attr>
-        <attr name="endIconWith" format="dimension">
-            <enum name="fill_parent" value="-1" />
-            <enum name="match_parent" value="-1" />
-            <enum name="wrap_content" value="-2" />
-        </attr>
-        <attr name="endIconHigh" format="dimension">
-            <enum name="fill_parent" value="-1" />
-            <enum name="match_parent" value="-1" />
-            <enum name="wrap_content" value="-2" />
-        </attr>
-        <attr name="endIconMarginStart" format="dimension"/>
-        <attr name="endIconMarginEnd" format="dimension"/>
-        <attr name="endIconScaleType">
-            <enum name="matrix" value="0" />
-            <enum name="fitXY" value="1" />
-            <enum name="fitStart" value="2" />
-            <enum name="fitCenter" value="3" />
-            <enum name="fitEnd" value="4" />
-            <enum name="center" value="5" />
-            <enum name="centerCrop" value="6" />
-            <enum name="centerInside" value="7" />
-        </attr>
-        <!--        mainTv-->
-        <attr name="mainTvText" format="reference|string"/>
-        <attr name="mainTvTextColor" format="color"/>
-        <attr name="mainTvTextSize" format="dimension"/>
-        <attr name="mainTvMaxLines" format="integer"/>
-        <attr name="mainTvTextStyle">
-            <enum name="normal" value="0" />
-            <enum name="bold" value="1" />
-            <enum name="italic" value="2" />
-        </attr>
-        <attr name="mainTvMarginStart" format="dimension"/>
-        <attr name="mainTvMarginEnd" format="dimension"/>
-        <attr name="mainTvVisibility">
-            <enum name="visible" value="0" />
-            <enum name="invisible" value="4" />
-            <enum name="gone" value="8" />
-        </attr>
+    <attr format="dimension" name="leftIconWith">
+      <enum name="fill_parent" value="-1" />
+      <enum name="match_parent" value="-1" />
+      <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr format="dimension" name="leftIconHigh">
+      <enum name="fill_parent" value="-1" />
+      <enum name="match_parent" value="-1" />
+      <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr format="dimension" name="leftIconMarginStart" />
+    <attr format="dimension" name="leftIconMarginEnd" />
+    <attr name="leftIconScaleType">
+      <enum name="matrix" value="0" />
+      <enum name="fitXY" value="1" />
+      <enum name="fitStart" value="2" />
+      <enum name="fitCenter" value="3" />
+      <enum name="fitEnd" value="4" />
+      <enum name="center" value="5" />
+      <enum name="centerCrop" value="6" />
+      <enum name="centerInside" value="7" />
+    </attr>
+    <!--        mainTV右侧图标-->
+    <attr format="reference" name="rightIconSrc" />
+    <attr name="rightIconVisibility">
+      <enum name="visible" value="0" />
+      <enum name="invisible" value="4" />
+      <enum name="gone" value="8" />
+    </attr>
+    <attr format="dimension" name="rightIconWith">
+      <enum name="fill_parent" value="-1" />
+      <enum name="match_parent" value="-1" />
+      <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr format="dimension" name="rightIconHigh">
+      <enum name="fill_parent" value="-1" />
+      <enum name="match_parent" value="-1" />
+      <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr format="dimension" name="rightIconMarginStart" />
+    <attr format="dimension" name="rightIconMarginEnd" />
+    <attr name="rightIconScaleType">
+      <enum name="matrix" value="0" />
+      <enum name="fitXY" value="1" />
+      <enum name="fitStart" value="2" />
+      <enum name="fitCenter" value="3" />
+      <enum name="fitEnd" value="4" />
+      <enum name="center" value="5" />
+      <enum name="centerCrop" value="6" />
+      <enum name="centerInside" value="7" />
+    </attr>
+    <!--        view尾部图标-->
+    <attr format="reference" name="endIconSrc" />
+    <attr name="endIconVisibility">
+      <enum name="visible" value="0" />
+      <enum name="invisible" value="4" />
+      <enum name="gone" value="8" />
+    </attr>
+    <attr format="dimension" name="endIconWith">
+      <enum name="fill_parent" value="-1" />
+      <enum name="match_parent" value="-1" />
+      <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr format="dimension" name="endIconHigh">
+      <enum name="fill_parent" value="-1" />
+      <enum name="match_parent" value="-1" />
+      <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr format="dimension" name="endIconMarginStart" />
+    <attr format="dimension" name="endIconMarginEnd" />
+    <attr name="endIconScaleType">
+      <enum name="matrix" value="0" />
+      <enum name="fitXY" value="1" />
+      <enum name="fitStart" value="2" />
+      <enum name="fitCenter" value="3" />
+      <enum name="fitEnd" value="4" />
+      <enum name="center" value="5" />
+      <enum name="centerCrop" value="6" />
+      <enum name="centerInside" value="7" />
+    </attr>
+    <!--        mainTv-->
+    <attr format="reference|string" name="mainTvText" />
+    <attr format="color" name="mainTvTextColor" />
+    <attr format="dimension" name="mainTvTextSize" />
+    <attr format="integer" name="mainTvMaxLines" />
+    <attr name="mainTvTextStyle">
+      <enum name="normal" value="0" />
+      <enum name="bold" value="1" />
+      <enum name="italic" value="2" />
+    </attr>
+    <attr format="dimension" name="mainTvMarginStart" />
+    <attr format="dimension" name="mainTvMarginEnd" />
+    <attr name="mainTvVisibility">
+      <enum name="visible" value="0" />
+      <enum name="invisible" value="4" />
+      <enum name="gone" value="8" />
+    </attr>
 
-        <attr name="rightTvText" format="reference|string"/>
-        <attr name="rightTvTextColor" format="color"/>
-        <attr name="rightTvTextSize" format="dimension"/>
-        <attr name="rightTvTextStyle">
-            <enum name="normal" value="0" />
-            <enum name="bold" value="1" />
-            <enum name="italic" value="2" />
-        </attr>
-        <attr name="rightTvMarginStart" format="dimension"/>
-        <attr name="rightTvMarginEnd" format="dimension"/>
-        <attr name="rightTvVisibility">
-            <enum name="visible" value="0" />
-            <enum name="invisible" value="4" />
-            <enum name="gone" value="8" />
-        </attr>
+    <attr format="reference|string" name="rightTvText" />
+    <attr format="color" name="rightTvTextColor" />
+    <attr format="dimension" name="rightTvTextSize" />
+    <attr name="rightTvTextStyle">
+      <enum name="normal" value="0" />
+      <enum name="bold" value="1" />
+      <enum name="italic" value="2" />
+    </attr>
+    <attr format="dimension" name="rightTvMarginStart" />
+    <attr format="dimension" name="rightTvMarginEnd" />
+    <attr name="rightTvVisibility">
+      <enum name="visible" value="0" />
+      <enum name="invisible" value="4" />
+      <enum name="gone" value="8" />
+    </attr>
 
-        <attr name="rightSwVisibility">
-            <enum name="visible" value="0" />
-            <enum name="invisible" value="4" />
-            <enum name="gone" value="8" />
-        </attr>
-        <attr name="rightSwWith" format="dimension">
-            <enum name="fill_parent" value="-1" />
-            <enum name="match_parent" value="-1" />
-            <enum name="wrap_content" value="-2" />
-        </attr>
-        <attr name="rightSwHigh" format="dimension">
-            <enum name="fill_parent" value="-1" />
-            <enum name="match_parent" value="-1" />
-            <enum name="wrap_content" value="-2" />
-        </attr>
-        <attr name="rightSwMarginStart" format="dimension"/>
-        <attr name="rightSwMarginEnd" format="dimension"/>
+    <attr name="rightSwVisibility">
+      <enum name="visible" value="0" />
+      <enum name="invisible" value="4" />
+      <enum name="gone" value="8" />
+    </attr>
+    <attr format="dimension" name="rightSwWith">
+      <enum name="fill_parent" value="-1" />
+      <enum name="match_parent" value="-1" />
+      <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr format="dimension" name="rightSwHigh">
+      <enum name="fill_parent" value="-1" />
+      <enum name="match_parent" value="-1" />
+      <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr format="dimension" name="rightSwMarginStart" />
+    <attr format="dimension" name="rightSwMarginEnd" />
 
-    </declare-styleable>
+  </declare-styleable>
 </resources>

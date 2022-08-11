@@ -97,6 +97,19 @@
         <item name="android:textSize">@dimen/dp_16</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="ActivityCardStyle">
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_marginStart">@dimen/dp_16</item>
+        <item name="android:layout_marginEnd">@dimen/dp_16</item>
+        <item name="android:layout_marginBottom">@dimen/dp_10</item>
+        <item name="android:background">@drawable/bg_white</item>
+        <item name="cardCornerRadius">@dimen/dp_10</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
